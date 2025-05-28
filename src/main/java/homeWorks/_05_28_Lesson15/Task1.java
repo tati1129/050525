@@ -1,4 +1,4 @@
-package homeWorks._05_28_15Lesson;
+package homeWorks._05_28_Lesson15;
 import java.util.Arrays;
 import java.util.Random;
 

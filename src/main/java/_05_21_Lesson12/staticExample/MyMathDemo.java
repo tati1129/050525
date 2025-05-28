@@ -1,7 +1,0 @@
-package _05_21_Lesson12.staticExample;
-
-public class MyMathDemo {
-    public static void main(String[] args) {
-        System.out.println(MyMath.sum(2, 3));
-    }
-}

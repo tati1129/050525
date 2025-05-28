@@ -12,7 +12,7 @@ public class Main3 {
         int userNum2 = UserInputStatic.inputInt("Введите конец диапазона");
 
 
-        for (int i = userNum1; i < userNum2; i++) {
+        for (int i = userNum1; i <= userNum2; i++) {
             if (isNumSimple(i)) {
                 System.out.print(" "+i);
             }

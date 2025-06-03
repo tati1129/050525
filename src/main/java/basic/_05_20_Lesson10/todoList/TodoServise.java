@@ -1,6 +1,6 @@
 package basic._05_20_Lesson10.todoList;
 
-import javaPro3._05_19.UserInput;
+import basic._05_20_Lesson10.UserInput;
 
 public class TodoServise {
 

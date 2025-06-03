@@ -1,23 +1,24 @@
 package basic._05_19_Lesson9.studentWithgroup;
 
-import javaPro3._05_19.UserInput;
+import basic._05_26_Lesson13.UserInputStatic;
+
 
 public class StudentService {
     public Group createNewGroup(){
-        UserInput input = new UserInput();
+        UserInputStatic input = new UserInputStatic();
 
-        String groupName = input.inputText("Ведите название группы: ");
-        String startDate = input.inputText("Ведите начало обучения: ");
-        int countStudent = input.inputInt("Ведите количество студентов: ");
+        String groupName = UserInputStatic.inputString("Ведите название группы: ");
+        String startDate = UserInputStatic.inputString("Ведите начало обучения: ");
+        int countStudent = UserInputStatic.inputInt("Ведите количество студентов: ");
         Group group = new Group(groupName, startDate, countStudent);
         return  group;
     };
 
     public Student createNeStudent(Group group){
-        UserInput input = new UserInput();
 
-        String studentName = input.inputText("Введиту имя студента : ");
-        String idCard = input.inputText("Введите id карту : ");
+
+        String studentName = UserInputStatic.inputString("Введиту имя студента : ");
+        String idCard = UserInputStatic.inputString("Введите id карту : ");
 
         Student student = new Student(studentName,idCard,group);
         return student;

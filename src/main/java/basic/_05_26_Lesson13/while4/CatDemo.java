@@ -1,7 +1,7 @@
 package basic._05_26_Lesson13.while4;
 
-import javaPro3._05_26.UserInputStatic;
-import javaPro3._05_26.while2.Cat;
+import  basic._05_26_Lesson13.UserInputStatic;
+import  basic._05_26_Lesson13.while2.Cat;
 
 public class CatDemo {
     public static void main(String[] args) {

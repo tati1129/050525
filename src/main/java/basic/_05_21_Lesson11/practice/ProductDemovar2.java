@@ -1,6 +1,6 @@
 package basic._05_21_Lesson11.practice;
 
-import javaPro3._05_21.elseIf.UserInputStatic;
+import basic._05_21_Lesson11.elseIf.UserInputStatic;
 
 public class ProductDemovar2 {
     public static void main(String[] args) {

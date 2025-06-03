@@ -1,6 +1,6 @@
 package basic._05_26_Lesson13.forLoop;
 
-import javaPro3._05_26.UserInputStatic;
+import basic._05_26_Lesson13.UserInputStatic;
 
 public class ForDemo1 {
     public static void main(String[] args) {

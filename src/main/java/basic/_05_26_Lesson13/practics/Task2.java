@@ -1,6 +1,6 @@
 package basic._05_26_Lesson13.practics;
 
-import javaPro3._05_26.UserInputStatic;
+import basic._05_26_Lesson13.UserInputStatic;
 
 public class Task2 {
     public static void main(String[] args) {

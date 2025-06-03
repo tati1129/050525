@@ -1,6 +1,6 @@
 package basic._05_26_Lesson13.while5;
 
-import javaPro3._05_26.UserInputStatic;
+import basic._05_26_Lesson13.UserInputStatic;
 
 public class WhileDemo5 {
     public static void main(String[] args) {

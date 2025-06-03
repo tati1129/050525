@@ -1,6 +1,6 @@
 package basic._05_15_Lesson8.studentClass.var1;
 
-import javaPro3._05_15.studentClass.var1.Student;
+import basic._05_15_Lesson8.studentClass.var1.Student;
 
 import java.util.Scanner;
 

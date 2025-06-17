@@ -79,7 +79,7 @@ public class ProductRepository {
         return newProduct;
     }
 
-    public Product[] findByCategoryBrand(String brand, String category){
+    public Product[] findByCategoryAndBrand(String brand, String category){
         int counter = 0;
         for (int i = 0; i < lastProductIndex; i++) {
            boolean checkCurrentProducktResult  =checkCurrentProduckt(database[i], brand,category);

@@ -12,6 +12,9 @@ public class CatalogRepository {
     }
 
     public boolean addItem(Item item) {
+        if (findById(item.getCatalogId()) != null) {
+            return false;
+        }
         if (size >= catalog.length) {
             return false;
         }

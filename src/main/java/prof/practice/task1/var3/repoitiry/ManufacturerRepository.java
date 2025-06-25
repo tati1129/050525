@@ -9,9 +9,10 @@ public class ManufacturerRepository {
     private TypeRepository typeRepository;
     private TeaRepository teaRepository;
 
-    public ManufacturerRepository(int quantity, TypeRepository typeRepository) {
+    public ManufacturerRepository(int quantity, TypeRepository typeRepository, TeaRepository teaRepository) {
         this.manufactures = new Manufacture[quantity];
         this.typeRepository = typeRepository;
+        this.teaRepository = teaRepository;
     }
 
     public boolean addManufacture(String manufact) {

@@ -9,8 +9,17 @@ public class Magazine extends MediaItem{
         this.issueNumber = issueNumber;
     }
 
+    public int getIssueNumber() {
+        return issueNumber;
+    }
+
     @Override
     public void printInfo() {
-
+        System.out.println(
+                "Book: " + getTitle() +
+                        ", Author: " + getAuthor() +
+                        ", year: " + getYear() +
+                        ", issueNumber: " + issueNumber
+        );
     }
 }

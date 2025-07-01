@@ -1,0 +1,14 @@
+cd /home
+mkdir -p animals/dogs animals/cats animals/fish
+cd animals
+touch dogs/pluto.txt cats/garfield.txt fish/nemo.txt
+ls -la
+cd /tmp
+touch adam.txt
+mkdir -p /home/humans && cp /tmp/adam.txt /home/humans/adam.txt
+touch /tmp/evA.txt
+mv evA.txt /opt/eve.txt
+cd /opt
+mv eve.txt /home/humans/eve.txt
+cd /home/humans
+ls -la

@@ -1,11 +1,13 @@
 package prof.homeworks._07_03_Lesson8;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Stack;
 
-public class StackBracketsDemo {
+public class MapBracketsDemo {
     public static void main(String[] args) {
         /*
-        проверить правитльность последовательности скобок
+        проверить правильность последовательности скобок
         (())
         ()()(())
         ((()))()(())
@@ -41,27 +43,30 @@ public class StackBracketsDemo {
     private static boolean isCorreectBraket(String stringLine) {
         Stack<Character> stack = new Stack<>();
 
+        Map<Character, Character> bracketsMap = new HashMap<>();
+        bracketsMap.put(')', '(');
+        bracketsMap.put('}', '{');
+        bracketsMap.put(']', '[');
+
+
         //Проверка на четность длины: если кол-во скобок нечетное, сразу false
         if (stringLine.length() % 2 != 0) {
             return false;
         }
 
-        for (int i = 0; i < stringLine.length(); i++) {
+        for (int i = 0; i <= stringLine.length(); i++) {
             char ch = stringLine.charAt(i);
 
             //Если открывающаяся скобка - добавляем в стек
-            if (ch == '(' || ch == '[' || ch == '{') {
+            if (bracketsMap.containsValue(ch)) {
                 stack.push(ch);
-            } else if (ch == ')' || ch == ']' || ch == '}') {
-                if (stack.empty()) {
+            } else if (bracketsMap.containsKey(ch)) {
+                if (stack.isEmpty()) {
                     return false;
                     // если стек пуст, то нет пары ➔ ошибка
                 }
                 char top = stack.pop();
-                // Проверка соответствия пар
-                if (ch == ')' && top != '(' ||
-                        ch == ']' && top != '[' ||
-                        ch == '}' && top != '{') {
+                if (top != bracketsMap.get(ch)) {
                     return false;
                 }
 

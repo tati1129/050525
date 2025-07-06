@@ -1,6 +1,6 @@
 package prof.lessons._06_19_Lesson2.interfaces.practice.entity.general;
 
-public class MotorizeVechicle extends Vechicle{
+public class MotorizeVechicle extends Vechicle {
     private Engine engine;
     private GearShift gearShift;
 
@@ -10,15 +10,15 @@ public class MotorizeVechicle extends Vechicle{
 
     @Override
     void brake() {
-        if (getSpeed() >10){
-            setSpeed(getSpeed()-10);
+        if (getSpeed() > 10) {
+            setSpeed(getSpeed() - 10);
         }
 
     }
 
     @Override
     void accelerate() {
-setSpeed(getSpeed() + 10);
-setSpeed(getSpeed());
+        setSpeed(getSpeed() + 10);
+        setSpeed(getSpeed());
     }
 }

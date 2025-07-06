@@ -1,6 +1,6 @@
 package prof.practice._ww.var2;
 
-public class BlackTea extends Tea{
+public class BlackTea extends Tea {
 
     private String variety;
 

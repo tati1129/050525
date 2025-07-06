@@ -17,7 +17,7 @@ public class BookDemo {
         library.add(new Book(12, "Book12"));
         library.add(new Book(7, "Book7"));
 
-        for (Book myBook : library){
+        for (Book myBook : library) {
             System.out.println("id : " + myBook.getId() + ", " + myBook.getTitle());
         }
     }

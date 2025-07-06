@@ -24,11 +24,11 @@ public class TicketService {
         return sellingResult;
     }
 
-    public int[] returnWinnerTicketsId(int[] winnerNumbers){
+    public int[] returnWinnerTicketsId(int[] winnerNumbers) {
         return ticketRepository.allWinnerTickets(winnerNumbers);
     }
 
-    public void printWinnerTickets(int[] winnerTicketsId){
+    public void printWinnerTickets(int[] winnerTicketsId) {
 
         for (int i = 0; i < winnerTicketsId.length; i++) {
             int currentTicketId = winnerTicketsId[i];

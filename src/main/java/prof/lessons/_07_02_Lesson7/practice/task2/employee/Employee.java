@@ -1,6 +1,6 @@
 package prof.lessons._07_02_Lesson7.practice.task2.employee;
 
-public class Employee implements Comparable<Employee>{
+public class Employee implements Comparable<Employee> {
     private int id;
     private String name;
     private double salary;

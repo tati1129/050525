@@ -3,7 +3,7 @@ package basic.homeWorks._05_13_Lesson8.items;
 public class ShopDemo {
     public static void main(String[] args) {
 
-        Shop shop = new Shop(1000,500);
+        Shop shop = new Shop(1000, 500);
 
         shop.discount = 100;
 

@@ -7,8 +7,6 @@ public class Tea {
     private String type;
 
 
-
-
     public Tea(int id, String manufacturer, String type) {
         this.id = idCounter++;
         this.manufacturer = manufacturer;

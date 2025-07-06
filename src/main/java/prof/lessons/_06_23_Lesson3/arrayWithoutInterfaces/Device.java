@@ -16,6 +16,8 @@ abstract public class Device {
     public String getDescription() {
         return description;
     }
+
     abstract void switchOn();
+
     abstract void switchOff();
 }

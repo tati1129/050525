@@ -20,11 +20,12 @@ public class Greeter {
     public Greeter() {
     }
 
-    public  void greet(String name, int times){
-        for (int i = 0; i <times ; i++) {
-            System.out.println("Hello, "+ name + "!");
+    public void greet(String name, int times) {
+        for (int i = 0; i < times; i++) {
+            System.out.println("Hello, " + name + "!");
         }
     }
+
     @Override
     public String toString() {
         return "Greeter{" +

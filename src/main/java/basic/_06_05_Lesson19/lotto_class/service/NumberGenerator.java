@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class NumberGenerator {
 
-    public static  int[] generateRandomUniqueNumbers(int lotteryDiapazon, int length) {
+    public static int[] generateRandomUniqueNumbers(int lotteryDiapazon, int length) {
         Random random = new Random();
         int[] generated = new int[length];
         //чтобы заполнить нужен источник значениий
@@ -32,9 +32,9 @@ public class NumberGenerator {
         return generated;
     }
 
-    private static boolean isCurrentNumberNotRepeat(int  checkNumber, int[] generated) {
+    private static boolean isCurrentNumberNotRepeat(int checkNumber, int[] generated) {
         for (int i = 0; i < generated.length; i++) {
-            if (generated[i] == checkNumber){
+            if (generated[i] == checkNumber) {
                 return false;
             }
 

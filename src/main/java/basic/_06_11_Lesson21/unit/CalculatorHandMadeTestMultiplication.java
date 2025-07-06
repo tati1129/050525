@@ -14,11 +14,11 @@ public class CalculatorHandMadeTestMultiplication {
 
         // реальный результат (результат работы метода)
 
-        int actualResult = calculator.multiplication(x,y);
+        int actualResult = calculator.multiplication(x, y);
 
         // ----------- test (compare result) ---------
 
-        if (actualResult == expectedResult){
+        if (actualResult == expectedResult) {
             System.out.println("Test OK!");
         } else {
             System.out.println("TEST FAILED!!!");

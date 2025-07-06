@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class StudentDemo {
     public static void main(String[] args) {
-        Student student1 = new Student("Ann" ,"65-utgd", "зачислен");
-        Scanner scanner =new Scanner(System.in);
+        Student student1 = new Student("Ann", "65-utgd", "зачислен");
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter status of student : ");
         String newStatus = scanner.nextLine();
 

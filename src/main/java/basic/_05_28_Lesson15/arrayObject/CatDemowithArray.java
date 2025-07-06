@@ -6,7 +6,7 @@ public class CatDemowithArray {
         Cat cat2 = new Cat("Bars");
         Cat cat3 = new Cat("Lucky");
 
-        Cat[] cats = {cat1,cat2,cat3};
+        Cat[] cats = {cat1, cat2, cat3};
         System.out.println("У нас живут : ");
         System.out.println(cats[0].getName());
         System.out.println(cats[1].getName());

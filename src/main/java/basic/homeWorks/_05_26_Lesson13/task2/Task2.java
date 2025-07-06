@@ -7,7 +7,7 @@ public class Task2 {
         int input = UserInput.inputInt("Введите число");
         int summ = 0;
 
-        for (int i = 0; i < input; i+=2) {
+        for (int i = 0; i < input; i += 2) {
             summ += i;
 
         }

@@ -12,9 +12,9 @@ public class Main1 {
         String correctPassword = "Pass12345";
         String userPassword = "";
 
-        while (!correctPassword.equals(userPassword)){
+        while (!correctPassword.equals(userPassword)) {
             userPassword = UserInputStatic.inputString("Введите пароль : ");
-            if (!correctPassword.equals(userPassword)){
+            if (!correctPassword.equals(userPassword)) {
                 System.out.println("Вы ввели не корректный пароль");
             }
             System.out.println("Пароль принят");

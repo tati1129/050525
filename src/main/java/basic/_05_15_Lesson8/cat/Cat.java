@@ -25,7 +25,7 @@ public class Cat {
     public String toString() {
         return
                 "name : " + name +
-                ", age : " + age
+                        ", age : " + age
                 ;
     }
 }

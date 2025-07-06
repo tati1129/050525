@@ -6,7 +6,7 @@ public class Vichicle {
     public String year;
     public int speed;
 
-    public Vichicle(String brand, String model, String year,int speed ) {
+    public Vichicle(String brand, String model, String year, int speed) {
         this.brand = brand;
         this.model = model;
         this.year = year;
@@ -43,7 +43,9 @@ public class Vichicle {
         System.out.println("The vechicle is driving");
     }
 
-    public void speedAVG(){
+    public void speedAVG() {
         System.out.println("The avg speed is :");
-    };
+    }
+
+    ;
 }

@@ -33,22 +33,22 @@ public class StudentApp {
         System.out.println(findBigAvg(students));
     }
 
-    public static Map<String,Double> findBigAvg(Map<String,Double> persons){
-      Map<String, Double> result = new HashMap<>();
-      Double avgMax = Double.MIN_VALUE;
-      for (Double avg : persons.values()){
-          if (avg>avgMax){
-              avgMax = avg;
-          }
-      }
+    public static Map<String, Double> findBigAvg(Map<String, Double> persons) {
+        Map<String, Double> result = new HashMap<>();
+        Double avgMax = Double.MIN_VALUE;
+        for (Double avg : persons.values()) {
+            if (avg > avgMax) {
+                avgMax = avg;
+            }
+        }
 
-      for (Map.Entry<String,Double> entry : persons.entrySet()){
-          if (entry.getValue().equals(avgMax)){
-              result.put(entry.getKey(), entry.getValue());
+        for (Map.Entry<String, Double> entry : persons.entrySet()) {
+            if (entry.getValue().equals(avgMax)) {
+                result.put(entry.getKey(), entry.getValue());
 
-          }
-      }
-      return result;
+            }
+        }
+        return result;
 
 //        Double avgMax = (double) 0;
 //        String name = "";

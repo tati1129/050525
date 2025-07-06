@@ -1,4 +1,4 @@
-package prof.homeworks._07_03_Lesson7.task1;
+package prof.homeworks._07_02_Lesson7.task1;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -41,7 +41,7 @@ public class Manufacture {
 
         if (teaCounter < teas.length) {
             teas[teaCounter++] = tea;
-            return "Чай "+ tea + " добавлен!";
+            return "Чай " + tea + " добавлен!";
         }
         return "Не удалось добавить: место в массиве ограничено.";
     }

@@ -6,11 +6,11 @@ public class LotteryService {
 
     private LotteryRepository service = new LotteryRepository();
 
-    public void  prepareLottery(){
-       service.makeLottery();
+    public void prepareLottery() {
+        service.makeLottery();
     }
 
-    public void printResults(){
+    public void printResults() {
 
     }
 }

@@ -10,27 +10,27 @@ public class BookService {
         this.bookRepository = bookRepository;
     }
 
-    public Book registerBook(String title, String author){
-        Book book = new Book(title,author);
+    public Book registerBook(String title, String author) {
+        Book book = new Book(title, author);
         boolean isSaved = bookRepository.saveBook(book);
 
-        if (isSaved){
+        if (isSaved) {
             return book;
-        }else {
-            return  null;
+        } else {
+            return null;
         }
 
     }
 
-    public Book findById(int id){
-       return bookRepository.findBookByID(id);
+    public Book findById(int id) {
+        return bookRepository.findBookByID(id);
     }
 
-    public Book findByTitle(String title){
+    public Book findByTitle(String title) {
         return bookRepository.findBookByTitle(title);
     }
 
-    public Book[] getAllBooks(){
-      return   bookRepository.getBooks();
+    public Book[] getAllBooks() {
+        return bookRepository.getBooks();
     }
 }

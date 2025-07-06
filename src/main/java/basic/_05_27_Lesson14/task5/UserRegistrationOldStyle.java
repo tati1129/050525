@@ -26,6 +26,6 @@ public class UserRegistrationOldStyle {
         String email = UserInputStatic.inputString("Ведите email");
         String description = UserInputStatic.inputString("Ведите имя пользователя");
 
-        User user = new User(username,password,email,description);
+        User user = new User(username, password, email, description);
     }
 }

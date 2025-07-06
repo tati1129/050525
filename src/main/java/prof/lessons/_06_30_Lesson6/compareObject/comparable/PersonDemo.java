@@ -18,7 +18,7 @@ public class PersonDemo {
         ourTeam.add(new Person("Jonhatan", "Watson"));
         ourTeam.add(new Person("Elena", "Trojan"));
 
-        for (Person person : ourTeam){
+        for (Person person : ourTeam) {
             System.out.println(person.getFirstName() + ", " + person.getLastName());
         }
     }

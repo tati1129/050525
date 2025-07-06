@@ -5,8 +5,8 @@ public class RectangleDemo {
 
         Rectangle rectangle = new Rectangle();
 
-        double area = rectangle.calculateArea(3,4);
-        double perimeter = rectangle.calculatePerimeter(5,6);
+        double area = rectangle.calculateArea(3, 4);
+        double perimeter = rectangle.calculatePerimeter(5, 6);
         System.out.println(" The area of rectangle is : " + area);
         System.out.println(" The perimeter of rectangle is : " + perimeter);
     }

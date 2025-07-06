@@ -33,16 +33,15 @@ public class HashSetExample {
         System.out.println("strings = " + strings);
 
         // -------------- создадим коллекцию list и наполним ее уникальными элемента
-        List<String> newListUniq =new ArrayList<>();
-        for (int i = 0; i < strings.size() ; i++) {
+        List<String> newListUniq = new ArrayList<>();
+        for (int i = 0; i < strings.size(); i++) {
             String currentElem = strings.get(i);
-            if (!newListUniq.contains(currentElem)){
+            if (!newListUniq.contains(currentElem)) {
                 newListUniq.add(currentElem);
             }
         }
 
         System.out.println("newListUniq = " + newListUniq);
-
 
 
         // ------------- альтернативный вариант -----------------

@@ -13,26 +13,34 @@ public class BankAccount {
         this.interestRate = interestRate;
     }
 
-    public double calculateInterest(int months){
-      return   accountBalance * interestRate / 100 /12 * months;
-    };
+    public double calculateInterest(int months) {
+        return accountBalance * interestRate / 100 / 12 * months;
+    }
 
-    public void printAccountInfo(){
+    ;
+
+    public void printAccountInfo() {
         System.out.println("Name : " + accountHolder + " , balance : " + accountBalance);
-    };
+    }
 
-    public void deposit(int amount){
+    ;
+
+    public void deposit(int amount) {
         accountBalance = accountBalance + amount;
-        System.out.println("You add : " + amount + " Balance : "+ accountBalance);
-    };
+        System.out.println("You add : " + amount + " Balance : " + accountBalance);
+    }
 
-    public void withdraw(int amount){
-        if (accountBalance >= amount){
-            accountBalance = Math.round((accountBalance - amount) *100.0) / 100.0;
-            System.out.println("You withdraw : " + amount + " Balance : "+ accountBalance);
-        }else {
+    ;
+
+    public void withdraw(int amount) {
+        if (accountBalance >= amount) {
+            accountBalance = Math.round((accountBalance - amount) * 100.0) / 100.0;
+            System.out.println("You withdraw : " + amount + " Balance : " + accountBalance);
+        } else {
             System.out.println("Not enought on your balance");
         }
 
-    };
+    }
+
+    ;
 }

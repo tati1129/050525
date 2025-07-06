@@ -22,5 +22,6 @@ abstract public class MediaItem {
     public int getYear() {
         return year;
     }
+
     public abstract void printInfo();
 }

@@ -11,16 +11,16 @@ public class LinkedListRandom {
 
         int elem = 0;
 
-        while (integers.size()<100) {
+        while (integers.size() < 100) {
             int rand = random.nextInt(100);
-            if ( !integers.contains(rand)){
+            if (!integers.contains(rand)) {
                 integers.add(rand);
             }
         }
         System.out.println(integers);
         Collections.sort(integers);
         int min = integers.get(0);
-        int max = integers.get(integers.size()-1);
+        int max = integers.get(integers.size() - 1);
         System.out.println(integers);
         System.out.println("min = " + min);
         System.out.println("max = " + max);

@@ -1,9 +1,9 @@
 package basic._05_19_Lesson9.car;
 
 public class Car {
-    private  String model;
+    private String model;
     CarProducer producer;
-    private  String color;
+    private String color;
 
     public Car(String model, CarProducer producer, String color) {
         this.model = model;

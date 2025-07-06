@@ -6,9 +6,9 @@ import basic._06_05_Lesson19.loto_home.repositiry.PlayerRepository;
 public class PlayerService {
     private PlayerRepository playerRepository = new PlayerRepository();
 
-    public boolean registerPlayer(String name){
+    public boolean registerPlayer(String name) {
         Player player = new Player(name);
         boolean isSaved = playerRepository.save(player);
-        return  isSaved;
+        return isSaved;
     }
 }

@@ -1,7 +1,6 @@
 package basic._05_15_Lesson8.studentClass.var3;
 
 
-
 public class StudentApp {
     public static void main(String[] args) {
         StudentService service = new StudentService();
@@ -10,7 +9,7 @@ public class StudentApp {
 
         System.out.println("Before changing : " + student);
 
-      service.changeStudentStatus(student);
+        service.changeStudentStatus(student);
 
         System.out.println("After changing : " + student);
     }

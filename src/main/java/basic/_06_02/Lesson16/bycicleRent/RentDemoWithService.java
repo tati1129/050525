@@ -5,12 +5,12 @@ public class RentDemoWithService {
         RentService service = new RentService();
 
         Bicycle[] bicycles = service.createArrBycycles();
-service.shoAllBycycle(bicycles);
+        service.shoAllBycycle(bicycles);
         String type = "cityType";
 
 
         int counter = service.countingBicycleByType(bicycles);
-        service.printResult(counter,type);
+        service.printResult(counter, type);
 
     }
 }

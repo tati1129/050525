@@ -1,6 +1,6 @@
 package prof.homeworks._06_18_Lesson1.abstraction.task3;
 
-public class MarineNavigationSystem extends NavigationSystem{
+public class MarineNavigationSystem extends NavigationSystem {
     private String vercion;
 
     public MarineNavigationSystem(String enviroment, String vercion) {

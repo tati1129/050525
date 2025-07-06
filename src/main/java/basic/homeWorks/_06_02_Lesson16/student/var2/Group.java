@@ -1,7 +1,6 @@
 package basic.homeWorks._06_02_Lesson16.student.var2;
 
 
-
 import java.util.Arrays;
 
 public class Group {

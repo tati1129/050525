@@ -6,7 +6,6 @@ public class SetTask1 {
     public static void main(String[] args) {
 
 
-
         // исходный текст
 
         String text = "В Java, `enum` (или перечисление) используется для определения коллекции именованных констант. " +
@@ -37,14 +36,15 @@ public class SetTask1 {
 
 
     }
-    private static String correctText(String text){
+
+    private static String correctText(String text) {
         String correctText = text.toLowerCase();
 
-        correctText = correctText.replace("," , "");
-        correctText = correctText.replace("(" , "");
-        correctText = correctText.replace(")" , "");
-        correctText = correctText.replace("." , "");
-        correctText = correctText.replace("`" , "");
+        correctText = correctText.replace(",", "");
+        correctText = correctText.replace("(", "");
+        correctText = correctText.replace(")", "");
+        correctText = correctText.replace(".", "");
+        correctText = correctText.replace("`", "");
         return correctText;
     }
 }

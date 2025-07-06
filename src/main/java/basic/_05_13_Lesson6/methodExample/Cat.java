@@ -4,10 +4,11 @@ public class Cat {
     String name;
     int age;
 
-    public void catMeow(){
+    public void catMeow() {
         System.out.println("Meow !!!");
     }
-    public void catBirthday(){
+
+    public void catBirthday() {
         System.out.println("Happy Birthday, Cat!");
         System.out.println(" Cat was : " + age + "year");
 

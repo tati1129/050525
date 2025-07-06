@@ -9,13 +9,14 @@ public class AnimalInput {
         this.scanner = scanner;
     }
 
-    public String inputText(String message){
+    public String inputText(String message) {
 
         Scanner sc = new Scanner(System.in);
         String inputText = scanner.nextLine();
         return inputText;
     }
-    public int inputInt(String message){
+
+    public int inputInt(String message) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println(message);

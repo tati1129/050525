@@ -68,7 +68,7 @@ public class CarRepository {
         return carsByPriceRange;
     }
 
-    public Car[] findAll(){
+    public Car[] findAll() {
         Car[] existingCars = new Car[size];
 
         for (int i = 0; i < size; i++) {
@@ -77,7 +77,6 @@ public class CarRepository {
 
         return existingCars;
     }
-
 
 
 }

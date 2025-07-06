@@ -10,12 +10,13 @@ public class AutoService {
         this.autoRepository = autoRepository;
     }
 
-    public boolean addNewAuto(Auto newAuto){
-        if (validateNewAuto(newAuto)){
+    public boolean addNewAuto(Auto newAuto) {
+        if (validateNewAuto(newAuto)) {
             return autoRepository.save(newAuto);
         }
-    return false;
+        return false;
     }
+
     private boolean validateNewAuto(Auto newAuto) {
         if (newAuto.getIdAuto() == 0) {
             return false;

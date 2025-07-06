@@ -2,7 +2,7 @@ package prof.lessons._06_19_Lesson2.interfaces.practice.entity.general;
 
 public class GearShift {
     private String transmissionParametrs;
-    private  Integer currentGear;
+    private Integer currentGear;
 
     public GearShift(String transmissionParametrsr) {
         this.transmissionParametrs = transmissionParametrs;

@@ -23,11 +23,12 @@ public class Sklad {
         devices[4] = tv2;
         devices[5] = tv3;
     }
-    public Device[] findByName(String searchName){
+
+    public Device[] findByName(String searchName) {
         Device[] foundedDevice = new Device[devices.length];
-int indexCounter = 0;
+        int indexCounter = 0;
         for (int i = 0; i < devices.length; i++) {
-            if (devices[i].getModel().contains(searchName)){
+            if (devices[i].getModel().contains(searchName)) {
                 foundedDevice[indexCounter++] = devices[i];
             }
 
@@ -36,6 +37,6 @@ int indexCounter = 0;
         for (int i = 0; i < devicesForReturn.length; i++) {
             foundedDevice[i] = devicesForReturn[i];
         }
-        return  devicesForReturn;
+        return devicesForReturn;
     }
 }

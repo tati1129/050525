@@ -10,7 +10,7 @@ public class Example1 {
         String pacientName5 = "Valera";
 
         int currentNum = 3;
-        if (currentNum ==1){
+        if (currentNum == 1) {
             System.out.println(pacientName1);
         }
     }

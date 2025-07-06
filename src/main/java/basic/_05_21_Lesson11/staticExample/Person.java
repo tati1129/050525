@@ -4,7 +4,7 @@ public class Person {
     public String name;
     public static String town;
 
-    public void printInfo(){
+    public void printInfo() {
         System.out.println(town);
     }
 }

@@ -15,7 +15,7 @@ public class CatDemoClassic {
 
         int catNum = UserInputStatic.inputInt("Выберите кота 1,2 или 3");
 
-        switch (catNum){
+        switch (catNum) {
             case 1 -> System.out.println(cat1.getName());
             case 2 -> System.out.println(cat2.getName());
             case 3 -> System.out.println(cat3.getName());

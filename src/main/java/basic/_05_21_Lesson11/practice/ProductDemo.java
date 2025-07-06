@@ -14,12 +14,12 @@ public class ProductDemo {
         String newProductName = UserInputStatic.inputText("Введите название продукта : ");
         int newProductPrice = UserInputStatic.inputInt("Введите цену продукта : ");
 
-        if (newProductName.isBlank()){
+        if (newProductName.isBlank()) {
             System.out.println("Невозможно создать новый продукт с таким названием");
-        }else if (newProductPrice <= 0){
+        } else if (newProductPrice <= 0) {
             System.out.println("Невозможно создать новый продукт с ценой меньше или равной нулю");
-        }else {
-            Product product1 = new Product(newProductName,newProductPrice);
+        } else {
+            Product product1 = new Product(newProductName, newProductPrice);
             System.out.println(product1);
         }
 

@@ -15,7 +15,7 @@ public class UserApp {
         String password = userInput.inputText("Enter password");
         String department = userInput.inputText("Enter department");
 
-        User user = new User(name,email,adress, password,department);
+        User user = new User(name, email, adress, password, department);
 
         System.out.println(user);
         scanner.close();

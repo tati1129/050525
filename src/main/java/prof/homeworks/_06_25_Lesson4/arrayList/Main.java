@@ -24,7 +24,6 @@ public class Main {
         list.add(new Phone("Samsung Galaxy", 900));
 
 
-
         list.add(new Phone("IPhone 16", 1900));
         list.add(new Phone("IPhone 15", 900));
         list.add(new Phone("IPhone 14", 900));
@@ -41,12 +40,12 @@ public class Main {
 
         System.out.println();
         System.out.println("Delete IPhone 15 like object");
-        list.remove(new Phone("IPhone 15",900));
+        list.remove(new Phone("IPhone 15", 900));
         printList(list);
     }
 
-    public static void printList(ArrayList<Phone> list){
-        for (Phone phone : list){
+    public static void printList(ArrayList<Phone> list) {
+        for (Phone phone : list) {
             System.out.println(phone);
         }
     }

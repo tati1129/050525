@@ -11,15 +11,15 @@ public class Rectangle extends Shape {
 
     @Override
     public int perimetr() {
-        int result = (getSide1()+side2) * 2;
-        System.out.println("Square of " + getFigurName() + " is " + result );
+        int result = (getSide1() + side2) * 2;
+        System.out.println("Square of " + getFigurName() + " is " + result);
         return result;
     }
 
     @Override
     public int square() {
-        int result = getSide1()*side2;
-        System.out.println("Perimetr of " + getFigurName() + " is " + result );
+        int result = getSide1() * side2;
+        System.out.println("Perimetr of " + getFigurName() + " is " + result);
         return result;
     }
 }

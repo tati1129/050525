@@ -12,5 +12,6 @@ abstract public class NavigationSystem {
     }
 
     public abstract void startNavigation();
+
     public abstract void stopNavigation();
 }

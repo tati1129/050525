@@ -33,12 +33,12 @@ public class TicketRepository {
             int playerTicketIndex = 0;
 
             for (int i = 0; i < ticketCounter; i++) {
-                if (tickets[i].getPlayerId() == playerId){
+                if (tickets[i].getPlayerId() == playerId) {
                     payerTickets[playerTicketIndex++] = tickets[i];
                 }
             }
             return payerTickets;
-        }else {
+        } else {
             return null;
         }
     }

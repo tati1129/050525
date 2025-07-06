@@ -10,14 +10,13 @@ public class Main {
         Student student4 = new Student("Stive", "Group1");
         Student student5 = new Student("Peter", "Group2");
 
-        Student[] students = {student1,student2,student3,student4,student5};
+        Student[] students = {student1, student2, student3, student4, student5};
 
         Student[] group1Students = {student1, student2, student4};
         Student[] group2Students = {student3, student5};
 
         Group group1 = new Group("Group1", group1Students);
         Group group2 = new Group("Group2", group2Students);
-
 
 
         System.out.println(group1);

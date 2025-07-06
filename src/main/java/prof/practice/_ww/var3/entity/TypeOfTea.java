@@ -2,10 +2,10 @@ package prof.practice._ww.var3.entity;
 
 public class TypeOfTea {
     private static int idCounter = 1;
-   private int id;
+    private int id;
     private String typeName;
 
-    public TypeOfTea( String typeName) {
+    public TypeOfTea(String typeName) {
         this.id = idCounter++;
         this.typeName = typeName;
     }

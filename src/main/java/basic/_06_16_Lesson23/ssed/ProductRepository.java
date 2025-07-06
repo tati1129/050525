@@ -79,10 +79,10 @@ public class ProductRepository {
         return newProduct;
     }
 
-    public Product[] findByCategoryAndBrand(String brand, String category){
+    public Product[] findByCategoryAndBrand(String brand, String category) {
         int counter = 0;
         for (int i = 0; i < lastProductIndex; i++) {
-           boolean checkCurrentProducktResult  =checkCurrentProduckt(database[i], brand,category);
+            boolean checkCurrentProducktResult = checkCurrentProduckt(database[i], brand, category);
             if (checkCurrentProducktResult) {
                 counter++;
             }
@@ -100,9 +100,9 @@ public class ProductRepository {
     }
 
     private boolean checkCurrentProduckt(Product product, String brand, String category) {
-        if (product.getCategory().equalsIgnoreCase(category) && product.getBrand().equalsIgnoreCase(brand)){
-            return  true;
-        }else {
+        if (product.getCategory().equalsIgnoreCase(category) && product.getBrand().equalsIgnoreCase(brand)) {
+            return true;
+        } else {
             return false;
         }
     }

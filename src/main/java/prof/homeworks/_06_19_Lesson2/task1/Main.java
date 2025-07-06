@@ -1,4 +1,5 @@
 package prof.homeworks._06_19_Lesson2.task1;
+
 /*Задача 1. Фильтруем животных по типу
 
 Описание:
@@ -18,10 +19,10 @@ public class Main {
         Dog dog2 = new Dog();
         Dog dog3 = new Dog();
 
-        Cat cat1  = new Cat();
-        Cat cat2  = new Cat();
-        Cat cat3  = new Cat();
-        Animal[] animals = {dog1,cat1, dog2, cat2, dog3, cat3 };
+        Cat cat1 = new Cat();
+        Cat cat2 = new Cat();
+        Cat cat3 = new Cat();
+        Animal[] animals = {dog1, cat1, dog2, cat2, dog3, cat3};
 
 
         System.out.println("Only dogs:");

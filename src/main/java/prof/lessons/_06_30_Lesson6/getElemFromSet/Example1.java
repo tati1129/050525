@@ -20,23 +20,23 @@ public class Example1 {
 //        }else {
 //            System.out.println("Element not found!");
 //        }
-        Set<Cat> cats =  new HashSet<>();
+        Set<Cat> cats = new HashSet<>();
 
         Set<String> strings = new HashSet<>();
 
-        cats.add(new Cat("Murz",2));
-        cats.add(new Cat("Barsik",3));
-        cats.add(new Cat("Lucky",3));
-        cats.add(new Cat("Dexter",5));
+        cats.add(new Cat("Murz", 2));
+        cats.add(new Cat("Barsik", 3));
+        cats.add(new Cat("Lucky", 3));
+        cats.add(new Cat("Dexter", 5));
 
-        Cat searchCat = new Cat("Lucky",3);
+        Cat searchCat = new Cat("Lucky", 3);
         //System.out.println(cats);
 
         // для корректной работы метода contains() ОБЯЗАТЕЛЬНО необходимо
         // переопределить методы equals() и hashCode() у класса Cat
-        if (cats.contains(searchCat)){
+        if (cats.contains(searchCat)) {
             System.out.println("Founded" + searchCat);
-        }else {
+        } else {
             System.out.println("Not found");
         }
 
@@ -46,12 +46,12 @@ public class Example1 {
         String searchElem = "Lucky";
         System.out.println("Отмечаем день рождения кота Lucky");
 
-        for (Cat currentCat : cats){
-            if (currentCat.getName().equals(searchElem)){
-                currentCat.setAge(currentCat.getAge() +1);
+        for (Cat currentCat : cats) {
+            if (currentCat.getName().equals(searchElem)) {
+                currentCat.setAge(currentCat.getAge() + 1);
             }
-         // логика если такого кота нет
-    }
+            // логика если такого кота нет
+        }
         System.out.println(cats);
 
     }

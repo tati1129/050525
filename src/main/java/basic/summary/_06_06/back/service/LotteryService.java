@@ -10,13 +10,13 @@ public class LotteryService {
         this.lotteryRepository = lotteryRepository;
     }
 
-    public void  prepareLottery(){
-       lotteryRepository.makeLottery();
+    public void prepareLottery() {
+        lotteryRepository.makeLottery();
     }
 
-public int[] returnWinnerNumber(){
-        return  lotteryRepository.getWinningNumbers();
-}
+    public int[] returnWinnerNumber() {
+        return lotteryRepository.getWinningNumbers();
+    }
 
 
 }

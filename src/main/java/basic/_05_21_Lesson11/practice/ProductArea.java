@@ -6,13 +6,13 @@ public class ProductArea {
 
         String textRusult = "";
         int x = 10;
-        if (x % 2 == 0){
+        if (x % 2 == 0) {
             textRusult = "четное";
 
-        }else {
+        } else {
             textRusult = "нечетное";
         }
-        System.out.println("Число " + x + " - " +textRusult);
+        System.out.println("Число " + x + " - " + textRusult);
     }
 
 }

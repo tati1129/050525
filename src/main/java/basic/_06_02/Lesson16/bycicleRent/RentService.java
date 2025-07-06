@@ -13,34 +13,35 @@ public class RentService {
         return bicycles;
     }
 
-    public void shoAllBycycle(Bicycle[] bicycles){
-        for (int i = 0; i < bicycles.length ; i++) {
+    public void shoAllBycycle(Bicycle[] bicycles) {
+        for (int i = 0; i < bicycles.length; i++) {
             System.out.println("Велосипед");
-            System.out.println("Номер " +  bicycles[i].getId());
-            System.out.println("Модель " +  bicycles[i].getModel());
-            System.out.println("Тип " +  bicycles[i].getType());
-            System.out.println("Цена " +  bicycles[i].getPrice());
-            System.out.println("Доступность "  + bicycles[i].isAvialyble());
+            System.out.println("Номер " + bicycles[i].getId());
+            System.out.println("Модель " + bicycles[i].getModel());
+            System.out.println("Тип " + bicycles[i].getType());
+            System.out.println("Цена " + bicycles[i].getPrice());
+            System.out.println("Доступность " + bicycles[i].isAvialyble());
         }
     }
-    public int countingBicycleByType(Bicycle[] bicycles){
+
+    public int countingBicycleByType(Bicycle[] bicycles) {
         int cityBikeCounter = 0;
         String type = "cityType";
 
         for (int i = 0; i < bicycles.length; i++) {
-            if (bicycles[i].getType().equals(type)){
-                cityBikeCounter ++;
+            if (bicycles[i].getType().equals(type)) {
+                cityBikeCounter++;
 
             }
         }
         return cityBikeCounter;
     }
 
-    public void printResult(int bikeCounter, String typeOfBike){
+    public void printResult(int bikeCounter, String typeOfBike) {
 
-        if (bikeCounter>0){
+        if (bikeCounter > 0) {
             System.out.println("На складе " + bikeCounter + " велосипедов типа: " + typeOfBike);
-        }else {
+        } else {
             System.out.println("Велосипедов типа: " + typeOfBike + " нет на складе");
         }
 

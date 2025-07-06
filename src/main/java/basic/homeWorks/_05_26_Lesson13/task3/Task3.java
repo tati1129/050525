@@ -14,13 +14,13 @@ public class Task3 {
         int countOdd = 0;
 
         for (int i = 0; i < userInt; i++) {
-            if (i %2 == 0){
-                countEven ++;
-            }else {
-                countOdd ++;
+            if (i % 2 == 0) {
+                countEven++;
+            } else {
+                countOdd++;
             }
         }
-        System.out.println("количество четных чисел в диапазоне от 0 до "+ userInt + " = " + countEven);
-        System.out.println("количество нечетных чисел в диапазоне от 0 до "+ userInt + " = " + countOdd);
+        System.out.println("количество четных чисел в диапазоне от 0 до " + userInt + " = " + countEven);
+        System.out.println("количество нечетных чисел в диапазоне от 0 до " + userInt + " = " + countOdd);
     }
 }

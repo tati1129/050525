@@ -12,26 +12,28 @@ public class LotteryService {
     private TicketRepository ticketRepository;
     private LotteryRepository lotteryRepository;
 
-    public  boolean registerPlayer(String name){
+    public boolean registerPlayer(String name) {
 
         // могли бы провести проверку соответствия имени неким критериям
         // например: имя не пустое, имя содержит запрещенные символы
 
         Player player = new Player(name);
         boolean isIaved = playerRepository.save(player);
-        return  isIaved;
+        return isIaved;
     }
 
-    public void  prepareLottery() { lotteryRepository.makeLottery();}
+    public void prepareLottery() {
+        lotteryRepository.makeLottery();
+    }
 
-    public void generateTicketsWithoutPlayers(){
+    public void generateTicketsWithoutPlayers() {
         for (int i = 0; i < LotteryConfiguration.MAX_TICKETS; i++) {
             Ticket ticket = new Ticket();
             ticketRepository.saveTicket(ticket);
         }
     }
 
-    public void printResult(){
+    public void printResult() {
 
     }
 }

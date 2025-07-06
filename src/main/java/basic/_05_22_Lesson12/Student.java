@@ -29,10 +29,10 @@ public class Student {
         return group;
     }
 
-    public void printStudentInfo(){
+    public void printStudentInfo() {
         System.out.println("Информация о студенте :");
         System.out.println("Фамилия : " + lastName + " , Имя : " + firstName);
-        System.out.println("id номер : "+ idNumber);
+        System.out.println("id номер : " + idNumber);
         System.out.println("Группа : " + group);
 
     }

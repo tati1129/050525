@@ -71,7 +71,7 @@ public class ApplicantService {
 
     public void printAll() {
         Aplicant[] all = aplicantRepository.findAll();
-        for (Aplicant aplicant: all){
+        for (Aplicant aplicant : all) {
             System.out.println(aplicant);
         }
     }

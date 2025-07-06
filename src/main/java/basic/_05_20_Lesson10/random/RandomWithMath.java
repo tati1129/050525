@@ -31,11 +31,11 @@ public class RandomWithMath {
         int num1 = 100;
         int num2 = 500;
 
-        double result = num1 + Math.random()* (num2 - num1);
+        double result = num1 + Math.random() * (num2 - num1);
 
-        double random1 = 0 +  Math.random()*(100 - 0);
-        double random2 = 120 +  Math.random()*(150 - 120);
-        double random3 = 1_000_000 +  Math.random()*(1_000_000 - 150_000);
+        double random1 = 0 + Math.random() * (100 - 0);
+        double random2 = 120 + Math.random() * (150 - 120);
+        double random3 = 1_000_000 + Math.random() * (1_000_000 - 150_000);
         System.out.println(random1);
         System.out.println(random2);
 

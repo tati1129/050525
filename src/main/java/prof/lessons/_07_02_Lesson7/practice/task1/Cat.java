@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Cat implements Comparable<Cat> {
     private String name;
     private int age;
-    private  CatColor color;
+    private CatColor color;
 
     public Cat(String name, int age, CatColor color) {
         this.name = name;
@@ -41,7 +41,7 @@ public class Cat implements Comparable<Cat> {
     public int compareTo(Cat anotherCat) {
         //int result = getColor().compareTo(anotherCat.getColor()); сорт еще и по цвету(в алф.порядке)
         int result = getColor().name().compareTo(anotherCat.getColor().name());
-        if (result == 0){
+        if (result == 0) {
             result = getName().compareTo(anotherCat.getName());
         }
         return result;

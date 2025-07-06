@@ -1,7 +1,6 @@
 package prof.lessons._07_02_Lesson7.practice.task1;
 
 
-
 import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
@@ -21,7 +20,7 @@ public class CatDemo {
         cats.add(new Cat("Tom", 4, CatColor.WHITE));
         cats.add(new Cat("Tim", 3, CatColor.BLUE));
 
-        for (Cat cat :cats){
+        for (Cat cat : cats) {
             System.out.println(cat);
         }
 

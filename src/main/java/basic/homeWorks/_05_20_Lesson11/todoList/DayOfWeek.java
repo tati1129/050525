@@ -14,17 +14,17 @@ public class DayOfWeek {
 
 
     public void addTask(Task task) {
-        if (taskCount < tasks.length){
+        if (taskCount < tasks.length) {
             tasks[taskCount] = task;
             taskCount++;
-        }else {
+        } else {
             System.out.println("Нельзя добавить больше задач в жтот день");
         }
     }
 
-    public void printTasks(){
+    public void printTasks() {
         System.out.println(day + " : ");
-        for (int i = 0; i < taskCount ; i++) {
+        for (int i = 0; i < taskCount; i++) {
             System.out.println(" - " + tasks[i]);
         }
     }

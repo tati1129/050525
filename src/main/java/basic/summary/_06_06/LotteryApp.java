@@ -8,7 +8,7 @@ import basic.summary._06_06.back.service.LotteryService;
 import basic.summary._06_06.back.service.PlayerService;
 import basic.summary._06_06.front.UserInterface;
 
-public class LotteryApp{
+public class LotteryApp {
     public static void main(String[] args) {
         TicketRepository ticketRepository = new TicketRepository();
         LotteryRepository lotteryRepository = new LotteryRepository();
@@ -16,9 +16,9 @@ public class LotteryApp{
 
         TicketService ticketService = new TicketService(ticketRepository);
         LotteryService lotteryService = new LotteryService(lotteryRepository);
-        PlayerService playerService = new PlayerService(playerRepository,ticketService);
+        PlayerService playerService = new PlayerService(playerRepository, ticketService);
 
-        UserInterface userInterface = new UserInterface(lotteryService,playerService,ticketService);
+        UserInterface userInterface = new UserInterface(lotteryService, playerService, ticketService);
 
         userInterface.menu();
     }

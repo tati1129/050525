@@ -39,9 +39,9 @@ public class EmployeeRepository {
         return null;
     }
 
-    public Employee[] findAll(){
+    public Employee[] findAll() {
         Employee[] allFill = new Employee[counterEmployee];
-        for (int i = 0; i <counterEmployee ; i++) {
+        for (int i = 0; i < counterEmployee; i++) {
             allFill[i] = employees[i];
         }
         return allFill;

@@ -19,11 +19,11 @@ public class SystemConfiguration {
     }
 
     public void setLogLevel(String logLevel) {
-            this.logLevel = logLevel;
+        this.logLevel = logLevel;
     }
 
     public void setLogFilePath(String logFilePath) {
-            this.logFilePath = logFilePath;
+        this.logFilePath = logFilePath;
     }
 
 

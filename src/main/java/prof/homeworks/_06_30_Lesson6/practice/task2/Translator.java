@@ -2,6 +2,7 @@ package prof.homeworks._06_30_Lesson6.practice.task2;
 /*
 создайте словарь, где одному значению английского слова может соответсвовать несколько переводов
  */
+
 import java.util.*;
 
 public class Translator {

@@ -3,28 +3,30 @@ package basic._05_26_Lesson13;
 import java.util.Scanner;
 
 public class UserInputStatic {
-   static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
 
 
-   public static String inputString(String message){
-       System.out.println(message);
-       String input = sc.nextLine();
-       return input;
-   }
+    public static String inputString(String message) {
+        System.out.println(message);
+        String input = sc.nextLine();
+        return input;
+    }
 
-    public static int inputInt(String message){
+    public static int inputInt(String message) {
         System.out.println(message);
         int input = sc.nextInt();
         sc.nextLine();
         return input;
     }
-    public static double inputDouble(String message){
+
+    public static double inputDouble(String message) {
         System.out.println(message);
         double input = sc.nextInt();
         sc.nextLine();
         return input;
     }
-    public static void closeScanner(){
-       sc.close();
+
+    public static void closeScanner() {
+        sc.close();
     }
 }

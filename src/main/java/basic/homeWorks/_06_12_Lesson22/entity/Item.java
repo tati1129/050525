@@ -37,7 +37,7 @@ public class Item {
 
     @Override
     public String toString() {
-        return String.format("Item { Номер каталога: '%s',наименование: '%s', брэнд: '%s', категория: '%s' цeна: '%d' }",catalogId, title, brand,category, price);
+        return String.format("Item { Номер каталога: '%s',наименование: '%s', брэнд: '%s', категория: '%s' цeна: '%d' }", catalogId, title, brand, category, price);
     }
 
 }

@@ -8,15 +8,17 @@ public class Cat {
         this.age = age;
         this.name = name;
     }
+
     public Cat() {
 
     }
 
-    public void printInfo(String name, int age){
-        System.out.println("Cat " + name+ ", age : " + age );
+    public void printInfo(String name, int age) {
+        System.out.println("Cat " + name + ", age : " + age);
 
     }
-    public void celebrate(String name){
-        System.out.println("Today's birthday cat " + name );
+
+    public void celebrate(String name) {
+        System.out.println("Today's birthday cat " + name);
     }
 }

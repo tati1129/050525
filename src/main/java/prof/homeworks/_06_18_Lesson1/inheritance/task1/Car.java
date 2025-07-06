@@ -26,6 +26,6 @@ public class Car extends Vichicle {
 
     @Override
     public void speedAVG() {
-        System.out.println("Average speed of the " + brand + " model "+ model +"  speed" + speed + " km/h");
+        System.out.println("Average speed of the " + brand + " model " + model + "  speed" + speed + " km/h");
     }
 }

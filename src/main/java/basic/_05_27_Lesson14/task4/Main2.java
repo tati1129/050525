@@ -13,7 +13,7 @@ public class Main2 {
 
         for (int i = 2; i < userNum; i++) {
             if (isNumSimple(i)) {
-                System.out.print(" "+i);
+                System.out.print(" " + i);
             }
         }
     }

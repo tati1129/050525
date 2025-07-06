@@ -8,8 +8,8 @@ public class DemoWhileFor {
         for (int i = 0; i < text.length(); i++) {
             System.out.print(" " + text.charAt(i));
         }
-        int counter= 0;
-        while (counter<text.length()){
+        int counter = 0;
+        while (counter < text.length()) {
             System.out.print(" " + text.charAt(counter));
             counter++;
         }

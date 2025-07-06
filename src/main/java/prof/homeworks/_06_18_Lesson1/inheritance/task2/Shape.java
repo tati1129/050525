@@ -17,10 +17,15 @@ public class Shape {
         return side1;
     }
 
-    public  int square(){
+    public int square() {
         return 0;
-    };
-    public int perimetr(){
+    }
+
+    ;
+
+    public int perimetr() {
         return 0;
-    };
+    }
+
+    ;
 }

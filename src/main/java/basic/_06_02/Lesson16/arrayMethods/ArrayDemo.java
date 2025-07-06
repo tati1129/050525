@@ -14,7 +14,7 @@ public class ArrayDemo {
         Random random = new Random();
 
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = random.nextInt(endValue+1) + startValue;
+            arr[i] = random.nextInt(endValue + 1) + startValue;
         }
 
         for (int i = 0; i < arr.length; i++) {

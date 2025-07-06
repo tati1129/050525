@@ -14,7 +14,7 @@ public class BookService {
         this.converter = converter;
     }
 
-    public Book addNewBook(BookDto bookDto){
+    public Book addNewBook(BookDto bookDto) {
         // можем проверить, что такой книги с таким названием у нас еще нет
 
         // процесс создания объекта с использованием данных из другого класса

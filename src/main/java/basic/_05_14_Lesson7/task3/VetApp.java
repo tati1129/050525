@@ -14,7 +14,7 @@ public class VetApp {
         String name = animalInput.inputText("Enter name");
         int age = animalInput.inputInt("Enter age");
 
-        Animal animal = new Animal(type,breed,name,age);
+        Animal animal = new Animal(type, breed, name, age);
 
         scanner.close();
 

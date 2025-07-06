@@ -67,7 +67,7 @@ public class TeaCollection {
             if (teas[i].getId() == idTeaForDelete) {
                 teas[i] = null;
                 // сдвигаем все элементы вправо от найденного
-                for (int j = 1; j < teaCounter-1; j++) {
+                for (int j = 1; j < teaCounter - 1; j++) {
                     teas[j] = teas[j + 1];
                 }
                 // "зануляем" последний "висящий" элемент
@@ -140,29 +140,29 @@ public class TeaCollection {
     }
 
 
-    public Tea[] findByManufactorer(String manufacturer){
+    public Tea[] findByManufactorer(String manufacturer) {
         int counter = 0;
         for (int i = 0; i < teaCounter; i++) {
-            if (teas[i].getManufacturer().equalsIgnoreCase(manufacturer)){
+            if (teas[i].getManufacturer().equalsIgnoreCase(manufacturer)) {
                 counter++;
             }
         }
         Tea[] teaByManufcturer = new Tea[counter];
         int index = 0;
         for (int i = 0; i < teaCounter; i++) {
-            if (teas[i].getManufacturer().equalsIgnoreCase(manufacturer)){
+            if (teas[i].getManufacturer().equalsIgnoreCase(manufacturer)) {
                 teaByManufcturer[index++] = teas[i];
             }
         }
         return teaByManufcturer;
     }
 
-    public Tea[] findAll(){
+    public Tea[] findAll() {
         Tea[] allTea = new Tea[teaCounter];
-        for (int i = 0; i <teaCounter ; i++) {
+        for (int i = 0; i < teaCounter; i++) {
             allTea[i] = teas[i];
         }
-        return  allTea;
+        return allTea;
     }
 
 }

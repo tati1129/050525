@@ -14,7 +14,7 @@ public class Main3 {
 
         for (int i = userNum1; i <= userNum2; i++) {
             if (isNumSimple(i)) {
-                System.out.print(" "+i);
+                System.out.print(" " + i);
             }
         }
     }

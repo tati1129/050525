@@ -14,9 +14,9 @@ public class Main {
         DepartmentRepository departmentRepository = new DepartmentRepository(4);
         EmployeeRepository employeeRepository = new EmployeeRepository(5);
 
-        DepartmentService departmentService =new DepartmentService(departmentRepository);
-        ApplicantService applicantService = new ApplicantService(aplicantRepository,departmentService);
-        EmployeeService employeeService = new EmployeeService(employeeRepository,applicantService);
+        DepartmentService departmentService = new DepartmentService(departmentRepository);
+        ApplicantService applicantService = new ApplicantService(aplicantRepository, departmentService);
+        EmployeeService employeeService = new EmployeeService(employeeRepository, applicantService);
 
         departmentService.createDepartments();
 

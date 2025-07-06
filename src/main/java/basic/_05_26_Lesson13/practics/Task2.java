@@ -13,12 +13,12 @@ public class Task2 {
         int num;
         boolean condition = true;
 
-        while (condition){
+        while (condition) {
             num = UserInputStatic.inputInt("Введите целое четное положительное число");
-            if ((num>0) &&( num %2 == 0)){
+            if ((num > 0) && (num % 2 == 0)) {
                 System.out.println("Вы ввели целое четное положительное число" + num);
-            }else {
-                System.out.println( "ОШИБКА ввода данных");
+            } else {
+                System.out.println("ОШИБКА ввода данных");
                 break;
             }
         }

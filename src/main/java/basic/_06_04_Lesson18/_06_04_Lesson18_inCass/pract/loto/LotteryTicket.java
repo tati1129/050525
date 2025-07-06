@@ -28,16 +28,16 @@ public class LotteryTicket {
                 currentRandomValue = source.receiveTicketNumber(isRandom, sizeLottery, idTicket, i);
             //проверяем, если уже среди ранее введенных номеров такое значение
             //если да, то повторно запрашиваем номер, если нет - сораняем полученное значение в текущую ячейку массива и переходим в следующее
-            if (isCurrentNumberIsNotRepeat(currentRandomValue)){
+            if (isCurrentNumberIsNotRepeat(currentRandomValue)) {
                 ticketNumbers[i] = currentRandomValue;
                 isNotFilCurentNumber = false;
             }
         }
     }
 
-    private boolean isCurrentNumberIsNotRepeat(int  checkNumber) {
+    private boolean isCurrentNumberIsNotRepeat(int checkNumber) {
         for (int i = 0; i < ticketNumbers.length; i++) {
-            if (ticketNumbers[i] == checkNumber){
+            if (ticketNumbers[i] == checkNumber) {
                 return false;
             }
 

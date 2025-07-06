@@ -1,9 +1,9 @@
 package basic._06_11_Lesson21.junitObject;
 
 public class Book {
-    private  String id;
-    private  String title;
-    private  String author;
+    private String id;
+    private String title;
+    private String author;
 
     public Book(String id, String title, String author) {
         this.id = id;
@@ -16,7 +16,6 @@ public class Book {
     }
 
 
-
     public String getTitle() {
         return title;
     }
@@ -24,7 +23,6 @@ public class Book {
     public String getAuthor() {
         return author;
     }
-
 
 
     @Override

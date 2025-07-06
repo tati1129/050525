@@ -5,7 +5,7 @@ public class ValidationResult {
     private String errorDescription;
 
     public ValidationResult(int codeError, String errorDescription) {
-     ;
+        ;
 
         this.codeError = codeError;
         this.errorDescription = errorDescription;

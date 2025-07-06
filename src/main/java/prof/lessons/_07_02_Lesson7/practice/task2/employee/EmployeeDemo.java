@@ -22,7 +22,8 @@ public class EmployeeDemo {
         }
 
 //Сортировка по отделу и ID (Комбинированный Comparator)
-        Collections.sort(employees, new ComparatorByDepAndId());;
+        Collections.sort(employees, new ComparatorByDepAndId());
+        ;
         System.out.println("by Department and Employee ID :");
         for (Employee employee : employees) {
             System.out.println(employee);
@@ -38,7 +39,7 @@ public class EmployeeDemo {
 
         // Сортировка по отделу и имени (Комбинированный Comparator)
 
-Collections.sort(employees, new ComparatorByNameAndDep());
+        Collections.sort(employees, new ComparatorByNameAndDep());
         System.out.println("\nSorted by Department and Name:");
         for (Employee employee : employees) {
             System.out.println(employee);

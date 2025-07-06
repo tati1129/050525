@@ -9,10 +9,10 @@ public class UserInterface {
         this.bookService = bookService;
     }
 
-    public void  start(){
+    public void start() {
         boolean exit = false;
 
-        while (!exit){
+        while (!exit) {
             System.out.println("-------------------------");
             System.out.println("Виды операций:");
             System.out.println("1. Создать новую книгу");
@@ -24,7 +24,7 @@ public class UserInterface {
             System.out.println("-------------------------");
 
             int userChoice = UserInputStatic.inputInt("Выберите операцию : ");
-            switch (userChoice){
+            switch (userChoice) {
                 case 1 -> registerNewBook();
                 case 2 -> printAllBook();
                 case 3 -> findById();
@@ -40,8 +40,6 @@ public class UserInterface {
     }
 
 
-
-
     private void registerNewBook() {
         int bookCounter = UserInputStatic.inputInt("Сколько книг хотите зарегистрировать?");
 
@@ -50,12 +48,12 @@ public class UserInterface {
             String bookTitle = UserInputStatic.inputString("Введите название книги : ");
             String bookAuthor = UserInputStatic.inputString("Введите автора книги : ");
 
-            Book savedBook = new Book(bookId,bookTitle,bookAuthor);
+            Book savedBook = new Book(bookId, bookTitle, bookAuthor);
             boolean isSaved = bookService.addNewBook(savedBook);
 
-            if (isSaved){
+            if (isSaved) {
                 System.out.println("Книга " + bookTitle + " автор " + bookAuthor + " успешно добавлена в библиотеку");
-            }else {
+            } else {
                 System.out.println("Добавить книгу не удалось.");
             }
         }
@@ -96,24 +94,24 @@ public class UserInterface {
         }
     }
 
-    private void findByTitle(){
+    private void findByTitle() {
         String title = UserInputStatic.inputString("Введите название книги: ");
 
         Book book = bookService.findByTitle(title);
-        if (book != null){
+        if (book != null) {
             System.out.println("Найдена книга: " + book);
-        }else{
+        } else {
             System.out.println("Книга с таким названием не найдена.");
         }
     }
 
-    private void findByAuthor(){
+    private void findByAuthor() {
         String author = UserInputStatic.inputString("Введите автора книги: ");
 
         Book[] book = bookService.findByAuthor(author);
-        if (book != null){
+        if (book != null) {
             System.out.println("Найдена автор: " + author);
-        }else{
+        } else {
             System.out.println("Книга с таким автором не найдена.");
         }
     }

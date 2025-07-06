@@ -28,7 +28,7 @@ public class TicketRepository {
         return false;
     }
 
-    public Ticket getTicketById(int ticketId){
+    public Ticket getTicketById(int ticketId) {
         return tickets[ticketId];
     }
 

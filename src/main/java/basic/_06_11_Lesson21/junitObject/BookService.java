@@ -1,10 +1,9 @@
 package basic._06_11_Lesson21.junitObject;
 
 
-
 public class BookService {
 
-    private  BookRepository bookRepository;
+    private BookRepository bookRepository;
 
     public BookService(BookRepository bookRepository) {
         this.bookRepository = bookRepository;

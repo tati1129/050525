@@ -5,12 +5,10 @@ public class Dog {
     private String breed;
 
 
-
     public Dog(String name, String breed) {
         this.name = name;
         this.breed = breed;
     }
-
 
 
     public String getName() {
@@ -21,7 +19,7 @@ public class Dog {
         return breed;
     }
 
-    public void voice(String message){
+    public void voice(String message) {
         System.out.println(message);
         System.out.println("Gav-gav!");
     }

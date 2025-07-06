@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class LotteryResult {
     private int WINNER_CRITERIA = 3;
 
-    public void checkLotteryResult(Lottery lottery, Player player){
+    public void checkLotteryResult(Lottery lottery, Player player) {
         // провести проверку билетов игрока сравнив их с выигрышными номерами
 
         // получим выигрышные номера лотереи
@@ -27,7 +27,7 @@ public class LotteryResult {
 
             int[] numbersFromCurrentTicket = playerTickets[i].getTicketNumbers();
 
-            int matchQuantity= checkTicketForWin(numbersFromCurrentTicket, winnerNumbers);
+            int matchQuantity = checkTicketForWin(numbersFromCurrentTicket, winnerNumbers);
 
             if (matchQuantity > WINNER_CRITERIA) {
                 System.out.println("Билет № " + i + " - выигрышный. Количество выигрышных номеров в билете = " + matchQuantity);
@@ -41,7 +41,7 @@ public class LotteryResult {
 
         for (int i = 0; i < numbersFromCurrentTicket.length; i++) {
             int currentNumberFromTicket = numbersFromCurrentTicket[i];
-            if (Arrays.binarySearch(winnerNumbers, currentNumberFromTicket) >= 0){
+            if (Arrays.binarySearch(winnerNumbers, currentNumberFromTicket) >= 0) {
                 matchCounter++;
             }
         }

@@ -10,22 +10,22 @@ public class ProductService {
         this.validationService = validationService;
     }
 
-    public  String add(int id, String category, String brand, String productName){
+    public String add(int id, String category, String brand, String productName) {
 
-        if (validationService.validate(id,category,brand,productName)){
-            Product newProduct = new Product(id,category,brand,productName);
+        if (validationService.validate(id, category, brand, productName)) {
+            Product newProduct = new Product(id, category, brand, productName);
             repository.save(newProduct);
             return newProduct.toString();
-        }else {
+        } else {
             return "Параметры продукта не соответствуют заданным критериям";
         }
     }
 
-    public String getproductId(int idForSearch){
-       Product foundedProduct = repository.findId(idForSearch);
-       if (foundedProduct == null){
-           return "Товар с id = " + idForSearch + " не найден";
-       }
-       return foundedProduct.toString();
+    public String getproductId(int idForSearch) {
+        Product foundedProduct = repository.findId(idForSearch);
+        if (foundedProduct == null) {
+            return "Товар с id = " + idForSearch + " не найден";
+        }
+        return foundedProduct.toString();
     }
 }

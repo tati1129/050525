@@ -7,5 +7,5 @@ public interface MagazinRepository {
 
     public Magazine findByTitle(String title);
 
-    public  Magazine[] findByAuthor(String author);
+    public Magazine[] findByAuthor(String author);
 }

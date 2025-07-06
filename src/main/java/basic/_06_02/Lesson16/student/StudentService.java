@@ -16,7 +16,7 @@ public class StudentService {
 
     public int findNames(Student[] students, char leter) {
         int count = 0;
-        char letter =Character.toLowerCase(leter);
+        char letter = Character.toLowerCase(leter);
         for (int i = 0; i < students.length; i++) {
             String name = students[i].getName().toLowerCase();
             if (Character.toLowerCase(name.charAt(0)) == Character.toLowerCase(leter)) {
@@ -28,7 +28,7 @@ public class StudentService {
         if (count == 0) {
             System.out.println("Нет студентов с именем на букву " + leter);
         }
-        System.out.println("Найдено " + count +" студентов с именем начинающимся на букву "+ leter);
+        System.out.println("Найдено " + count + " студентов с именем начинающимся на букву " + leter);
         return count;
 
     }

@@ -25,19 +25,20 @@ public class Player {
         return tickets;
     }
 
-    public  void fillTickets(int sizeTicket, int sizeLotteryNumbers, boolean isRandom){
+    public void fillTickets(int sizeTicket, int sizeLotteryNumbers, boolean isRandom) {
 
         for (int i = 0; i < tickets.length; i++) {
             tickets[i] = new LotteryTicket();
-            tickets[i].createAndFillTickets(sizeTicket,sizeLotteryNumbers,isRandom, i);
+            tickets[i].createAndFillTickets(sizeTicket, sizeLotteryNumbers, isRandom, i);
         }
 
     }
-    public void printPlayerData(){
+
+    public void printPlayerData() {
 
         System.out.println("Player ID : " + idCode);
         for (int i = 0; i < tickets.length; i++) {
-            System.out.println("Билет номер : " + (i+1));
+            System.out.println("Билет номер : " + (i + 1));
             System.out.println(Arrays.toString(tickets[i].getTicketNumbers()));
         }
     }

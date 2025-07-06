@@ -24,7 +24,7 @@ public class Dog {
         return breed;
     }
 
-    public void voice(String message){
+    public void voice(String message) {
         System.out.println(message);
         System.out.println("Gav-gav!");
     }

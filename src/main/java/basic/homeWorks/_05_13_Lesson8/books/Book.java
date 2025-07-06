@@ -10,22 +10,23 @@ public class Book {
         this.title = title;
         this.isInTheLibrary = isInTheLibrary;
     }
-     public void issueBook(){
-        if (isInTheLibrary){
+
+    public void issueBook() {
+        if (isInTheLibrary) {
             isInTheLibrary = false;
             System.out.println("The book '" + title + "' has been issued ");
-        }else {
+        } else {
 
             System.out.println("The book '" + title + "' is not available at the moment.");
         }
-     }
+    }
 
-     public void returnBook(){
-        if (!isInTheLibrary){
+    public void returnBook() {
+        if (!isInTheLibrary) {
             isInTheLibrary = true;
             System.out.println("The book  '" + title + "' has been returned");
-        }else {
+        } else {
             System.out.println("The book '" + title + "' is already in the library.");
         }
-     }
+    }
 }

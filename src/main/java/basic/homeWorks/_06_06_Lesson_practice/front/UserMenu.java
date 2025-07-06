@@ -80,20 +80,20 @@ public class UserMenu {
         int id = UserInputStatic.inputInt("Введите ID книги: ");
 
         Book book = bookService.findById(id);
-        if (book!= null){
+        if (book != null) {
             System.out.println("Найдена книга: " + book);
-        }else {
+        } else {
             System.out.println("Книга с таким ID не найдена.");
         }
     }
 
-    private void searchByTitle(){
+    private void searchByTitle() {
         String title = UserInputStatic.inputString("Введите название книги: ");
 
         Book book = bookService.findByTitle(title);
-        if (book != null){
+        if (book != null) {
             System.out.println("Найдена книга: " + book);
-        }else{
+        } else {
             System.out.println("Книга с таким названием не найдена.");
         }
     }

@@ -8,28 +8,28 @@ public class ServiceConfiguraion {
         this.systemConfiguration = systemConfiguration;
     }
 
-    public String updateLogLevel(String logLevel){
-        if (isValidLogLevel(logLevel)){
+    public String updateLogLevel(String logLevel) {
+        if (isValidLogLevel(logLevel)) {
             systemConfiguration.setLogLevel(logLevel);
             return "Уровень логирования успешно обновлен на " + logLevel;
-        }else {
+        } else {
             return "Ошибка! Недопустимый уровень логирования: " + logLevel;
         }
     }
 
-    public String updateLogFilePath(String logFilePath){
-        if (logFilePath != null && !logFilePath.trim().isEmpty()){
+    public String updateLogFilePath(String logFilePath) {
+        if (logFilePath != null && !logFilePath.trim().isEmpty()) {
             systemConfiguration.setLogFilePath(logFilePath);
             return "Путь к файлам логов успешно обновлен";
-        }else {
+        } else {
             return "Ошибка! Путь к файлам логов не может быть пустым.";
         }
     }
 
-    private  boolean isValidLogLevel(String logLevel){
+    private boolean isValidLogLevel(String logLevel) {
         String[] validLogLevel = {"DEBUG", "INFO", "WARN", "ERROR"};
-        for (String validLevel : validLogLevel){
-            if (validLevel.equalsIgnoreCase(logLevel)){
+        for (String validLevel : validLogLevel) {
+            if (validLevel.equalsIgnoreCase(logLevel)) {
                 return true;
             }
         }

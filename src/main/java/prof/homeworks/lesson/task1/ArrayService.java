@@ -15,7 +15,7 @@ public class ArrayService {
         return new int[size];
     }
 
-    public int[] fillArrayFromUserInput(int[] arr){
+    public int[] fillArrayFromUserInput(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
             int num = UserInputStatic.inputInt("Введите целое число");
@@ -24,20 +24,19 @@ public class ArrayService {
         return arr;
     }
 
-    public int[] sortReverse(int[] array){
+    public int[] sortReverse(int[] array) {
         int[] sortedArr = new int[array.length];
         int index = 0;
         Arrays.sort(array);
         //System.out.println(Arrays.toString(array));
-        for (int i = array.length-1; i >= 0; i--) {
+        for (int i = array.length - 1; i >= 0; i--) {
             sortedArr[index++] = array[i];
         }
         return sortedArr;
     }
 
 
-
-    public void printArr(int[] arr){
+    public void printArr(int[] arr) {
         System.out.print("[ ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");

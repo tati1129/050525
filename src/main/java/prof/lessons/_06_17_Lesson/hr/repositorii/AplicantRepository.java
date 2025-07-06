@@ -12,13 +12,12 @@ public class AplicantRepository {
 
     public String add(Aplicant aplicant) {
 
-            if (aplicantCounter<aplicants.length) {
-                aplicants[aplicantCounter++] = aplicant;
-                return "Запись добавлена успешно!";
-            }
+        if (aplicantCounter < aplicants.length) {
+            aplicants[aplicantCounter++] = aplicant;
+            return "Запись добавлена успешно!";
+        }
         return "База данных переполнена. ";
     }
-
 
 
     public Aplicant findById(int idForSearch) {

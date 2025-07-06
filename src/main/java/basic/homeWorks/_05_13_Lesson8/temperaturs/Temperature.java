@@ -7,8 +7,8 @@ public class Temperature {
         this.celsius = celsius;
     }
 
-    public double convertToFahrenheit(){
-        return  (celsius * 9 / 5) + 32;
+    public double convertToFahrenheit() {
+        return (celsius * 9 / 5) + 32;
 
     }
 

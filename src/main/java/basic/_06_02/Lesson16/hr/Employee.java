@@ -1,7 +1,7 @@
 package basic._06_02.Lesson16.hr;
 
 public class Employee {
-    private  String name;
+    private String name;
 
     public String getName() {
         return name;

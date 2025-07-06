@@ -10,16 +10,18 @@ public class Library {
         this.adress = adress;
         this.quantity = quantity;
     }
-    public void issueBook(){
+
+    public void issueBook() {
         quantity -= 1;
         System.out.println("Выдали книгу");
     }
-    public void returnBook(){
+
+    public void returnBook() {
         quantity += 1;
         System.out.println("Читатель вернул книгу");
     }
 
-    public void printInfo(){
+    public void printInfo() {
         System.out.println("Название библиотеки " + name);
         System.out.println("Адресс : " + adress);
         System.out.println("Количество книг в наличии : " + quantity);

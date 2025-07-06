@@ -2,7 +2,7 @@ package prof.lessons._06_23_Lesson3.mediaLibrary.entity;
 
 import prof.lessons._06_23_Lesson3.mediaLibrary.dto.BookDto;
 
-public class Book  extends MediaItem{
+public class Book extends MediaItem {
 
     private int pageCounter;
 
@@ -25,7 +25,7 @@ public class Book  extends MediaItem{
         );
     }
 
-    public static Book fromDto(BookDto dto){
-        return new Book(dto.getTitle(), dto.getAuthor(),dto.getYear(),dto.getPageCounter());
+    public static Book fromDto(BookDto dto) {
+        return new Book(dto.getTitle(), dto.getAuthor(), dto.getYear(), dto.getPageCounter());
     }
 }

@@ -13,15 +13,15 @@ public class ManufacturerService {
         this.typeRepository = typeRepository;
     }
 
-    public String addManufacterer(String manufact, String teaType){
+    public String addManufacterer(String manufact, String teaType) {
         return manufacturerRepository.addTeaTypeToManufacturer(manufact, teaType);
     }
 
-    public Manufacture findByNameManufacturer(String manufact){
-        return  manufacturerRepository.findByName(manufact);
+    public Manufacture findByNameManufacturer(String manufact) {
+        return manufacturerRepository.findByName(manufact);
     }
 
-    public Manufacture[] getAll(){
+    public Manufacture[] getAll() {
         return manufacturerRepository.getAll();
     }
 }

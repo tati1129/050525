@@ -8,24 +8,24 @@ public class Main {
         String userPassword = "";
         int counter = 5;
         boolean isAccsepted = false;
-        while (!correctPassword.equals(userPassword)){
+        while (!correctPassword.equals(userPassword)) {
             userPassword = UserInputStatic.inputString("Введите пароль : ");
-            if (!correctPassword.equals(userPassword)){
+            if (!correctPassword.equals(userPassword)) {
                 System.out.println("Вы ввели не корректный пароль");
                 counter--;
-            }else{
+            } else {
                 isAccsepted = true;
             }
-            if (counter == 0){
+            if (counter == 0) {
                 System.out.println("Вы использовали все попытки");
                 break;
             }
 
         }
 
-        if (isAccsepted){
+        if (isAccsepted) {
             System.out.println("Пароль принят");
-        }else{
+        } else {
             System.out.println("Доступ закрыт!");
         }
 

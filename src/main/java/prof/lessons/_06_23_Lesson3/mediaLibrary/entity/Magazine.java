@@ -1,6 +1,6 @@
 package prof.lessons._06_23_Lesson3.mediaLibrary.entity;
 
-public class Magazine extends MediaItem{
+public class Magazine extends MediaItem {
 
     private int issueNumber;
 

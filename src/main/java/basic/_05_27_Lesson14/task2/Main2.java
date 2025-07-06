@@ -14,10 +14,10 @@ public class Main2 {
 
         do {
             userPassword = UserInputStatic.inputString("Введите пароль : ");
-            if (!correctPassword.equals(userPassword)){
+            if (!correctPassword.equals(userPassword)) {
                 System.out.println("Вы ввели не корректный пароль");
             }
-        }while (!correctPassword.equals(userPassword));
+        } while (!correctPassword.equals(userPassword));
         System.out.println("Пароль принят");
     }
 }

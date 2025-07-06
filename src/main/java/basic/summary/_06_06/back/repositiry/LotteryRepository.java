@@ -14,22 +14,22 @@ public class LotteryRepository {
         this.winningNumbers = new int[LotteryConfiguration.TICKET_SIZE];
     }
 
-    public void makeLottery(){
+    public void makeLottery() {
         generateAllNumbers();
         shuffleNumbers();
         selectWinningNumbers();
     }
 
-    private void generateAllNumbers(){
-        for (int i = 0; i < allNumbers.length ; i++) {
-            allNumbers[i] = i+1;
+    private void generateAllNumbers() {
+        for (int i = 0; i < allNumbers.length; i++) {
+            allNumbers[i] = i + 1;
         }
     }
 
-    private void shuffleNumbers(){
+    private void shuffleNumbers() {
         shuffledNumbers = allNumbers.clone();
         Random random = new Random();
-        for (int i = shuffledNumbers.length-1; i >0 ; i--) {
+        for (int i = shuffledNumbers.length - 1; i > 0; i--) {
             int indexElemForChange = random.nextInt(i);
 
             int temp = shuffledNumbers[i];
@@ -38,14 +38,14 @@ public class LotteryRepository {
         }
     }
 
-    private void  selectWinningNumbers(){
+    private void selectWinningNumbers() {
         for (int i = 0; i < winningNumbers.length; i++) {
             winningNumbers[i] = shuffledNumbers[i];
         }
     }
 
 
-    public int[] getWinningNumbers(){
-        return  winningNumbers.clone();
+    public int[] getWinningNumbers() {
+        return winningNumbers.clone();
     }
 }

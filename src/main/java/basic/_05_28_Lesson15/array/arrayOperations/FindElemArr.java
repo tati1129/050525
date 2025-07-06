@@ -3,7 +3,7 @@ package basic._05_28_Lesson15.array.arrayOperations;
 public class FindElemArr {
     public static void main(String[] args) {
 
-        String[] strArr = {"word1","word4", "word3", "word5", "word3"};
+        String[] strArr = {"word1", "word4", "word3", "word5", "word3"};
         String elemForSearch = "word3";
 
         for (int i = 0; i < strArr.length; i++) {

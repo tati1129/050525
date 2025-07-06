@@ -24,7 +24,7 @@ public class User {
     }
 
 
-    void changePassword(String password){
+    void changePassword(String password) {
         this.password = password;
     }
 

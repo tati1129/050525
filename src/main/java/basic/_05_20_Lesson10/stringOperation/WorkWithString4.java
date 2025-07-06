@@ -28,11 +28,11 @@ public class WorkWithString4 {
 
         // а если нам надо ЗАМЕНИТЬ в нашем тексте какие-то символы на другие
 
-        String replacedAllLine = text.replace("-","*");
+        String replacedAllLine = text.replace("-", "*");
 
         System.out.println(replacedAllLine);
 
-        String replaceFirstLine = text.replaceFirst("-","*");
+        String replaceFirstLine = text.replaceFirst("-", "*");
         System.out.println(replaceFirstLine);
     }
 }

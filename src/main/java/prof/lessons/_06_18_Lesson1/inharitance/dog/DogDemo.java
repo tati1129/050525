@@ -10,7 +10,7 @@ public class DogDemo {
         Dog dog3 = new Dog("Lola", "York terrier");
         Dog dog4 = new Dog("Gera", "York terrier");
 
-        Dog[] dogs = {dog1,dog2,dog3,dog4};
+        Dog[] dogs = {dog1, dog2, dog3, dog4};
     }
 
     BigDog[] bigDogs = new BigDog[3];

@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class AutoRepository {
 
-   private String[] models = {"Model S", "Civic", "Corolla", "Mustang", "A4", "3 Series", "CX-5", "Sportage", "E-Class", "Polo"};
+    private String[] models = {"Model S", "Civic", "Corolla", "Mustang", "A4", "3 Series", "CX-5", "Sportage", "E-Class", "Polo"};
     private String[] producers = {"Tesla", "Honda", "Toyota", "Ford", "Audi", "BMW", "Mazda", "Kia", "Mercedes-Benz", "Volkswagen"};
 
     private Auto[] catalog;
@@ -20,15 +20,16 @@ public class AutoRepository {
         this.catalog = new Auto[CatalogConfiguration.MAX_QUANTITY];
     }
 
-    public void addAuto(int quantity){
+    public void addAuto(int quantity) {
         for (int i = 0; i < catalog.length; i++) {
             String model = models[random.nextInt(models.length)];
             String producer = producers[random.nextInt(producers.length)];
-            Auto auto = new Auto(i+1, model, producer);
+            Auto auto = new Auto(i + 1, model, producer);
             save(auto);
         }
 
     }
+
     public boolean save(Auto newAuto) {
         if (currentQantuty < catalog.length) {
             catalog[currentQantuty] = newAuto;
@@ -39,7 +40,7 @@ public class AutoRepository {
         }
     }
 
-    public  Auto findById(int id){
+    public Auto findById(int id) {
         for (int i = 0; i < currentQantuty; i++) {
             if (catalog[i].getIdAuto() == id) {
                 return catalog[i];
@@ -48,7 +49,7 @@ public class AutoRepository {
         return null;
     }
 
-    public  Auto findByModel(String model){
+    public Auto findByModel(String model) {
         for (int i = 0; i < currentQantuty; i++) {
             if (catalog[i].getModel().equalsIgnoreCase(model)) {
                 return catalog[i];
@@ -56,7 +57,8 @@ public class AutoRepository {
         }
         return null;
     }
-    public  Auto findByProducer(String produser){
+
+    public Auto findByProducer(String produser) {
         for (int i = 0; i < currentQantuty; i++) {
             if (catalog[i].getProducer().equalsIgnoreCase(produser)) {
                 return catalog[i];

@@ -15,7 +15,7 @@ public class Main {
 
         Random random = new Random();
 
-        for (int i = arr.length-1; i > 0; i--) {
+        for (int i = arr.length - 1; i > 0; i--) {
             int rand = random.nextInt(arr.length + 1);
             int temp = arr[rand];
             arr[rand] = arr[i];

@@ -9,7 +9,7 @@ public class TicketService {
     private TicketRepository ticketRepository = new TicketRepository();
 
 
-    public void generateTicketsWithOutPlayers(){
+    public void generateTicketsWithOutPlayers() {
         for (int i = 0; i < LotteryConfiguration.MAX_TICKETS; i++) {
             Ticket ticket = new Ticket();
             ticketRepository.saveTicket(ticket);

@@ -12,22 +12,22 @@ public class PlayerService {
         this.ticketService = ticketService;
     }
 
-    public Player registerPlayer(String name){
+    public Player registerPlayer(String name) {
         Player player = new Player(name);
         boolean isSaved = playerRepository.save(player);
-        if (isSaved){
+        if (isSaved) {
             return player;
-        }else {
+        } else {
             return null;
         }
     }
 
-    public boolean sellTicketsToPlayer(Player player ,int quantityTicketsToSell){
+    public boolean sellTicketsToPlayer(Player player, int quantityTicketsToSell) {
 
         boolean sellResult = ticketService.sellTicketToPlayer(player.getId(), quantityTicketsToSell);
         return sellResult;
-        }
-
     }
+
+}
 
 

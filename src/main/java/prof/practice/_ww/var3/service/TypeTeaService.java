@@ -10,19 +10,19 @@ public class TypeTeaService {
         this.typeRepository = typeRepository;
     }
 
-    public boolean addTypeOfTea(String type){
-        if (typeRepository.findTypeOfTeaByName(type) != null){
+    public boolean addTypeOfTea(String type) {
+        if (typeRepository.findTypeOfTeaByName(type) != null) {
             return false; // Уже существует — не добавляем
         }
 
         return typeRepository.addTypeOfTea(type); // Пытаемся добавить
     }
 
-    public TypeOfTea findTeaTypeByName(String type){
+    public TypeOfTea findTeaTypeByName(String type) {
         return typeRepository.findTypeOfTeaByName(type);
     }
 
-    public TypeOfTea[] getallTeaTypes(){
-     return typeRepository.getAll();
+    public TypeOfTea[] getallTeaTypes() {
+        return typeRepository.getAll();
     }
 }

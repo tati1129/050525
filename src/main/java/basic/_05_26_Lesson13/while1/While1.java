@@ -7,12 +7,12 @@ public class While1 {
 
 
         double summ = 0;
-        while (summ < 100){
+        while (summ < 100) {
 
             double num1 = UserInputStatic.inputDouble("ВВедите 1е числа");
             double num2 = UserInputStatic.inputDouble("ВВедите 2е числа");
             summ = num1 + num2;
-            System.out.println("Сумма " + num1 +" + " +num2 + " = " +summ);
+            System.out.println("Сумма " + num1 + " + " + num2 + " = " + summ);
         }
     }
 }

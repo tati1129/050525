@@ -18,8 +18,8 @@ public class ZooArray {
         this.birdFlyables = birdFlyables;
     }
 
-    public void createDefaultAnimals(){
-        BirdFlyable birdParrot = new BirdFlyable("Kesha",25,"parrot");
+    public void createDefaultAnimals() {
+        BirdFlyable birdParrot = new BirdFlyable("Kesha", 25, "parrot");
 
         animals[0] = birdParrot;
         birds[0] = birdParrot;

@@ -12,7 +12,7 @@ public class UserMenu {
     private ItemService service;
 
 
-    public UserMenu( ItemService service) {
+    public UserMenu(ItemService service) {
         this.service = service;
         service.fillSampleItems();
     }
@@ -77,7 +77,7 @@ public class UserMenu {
         String title = UserInputStatic.inputText("Введите наименование товара: ");
         int price = UserInputStatic.inputInt("Введите цену");
 
-        String addResultMessage = service.addItem(number, brand,category,title, price);
+        String addResultMessage = service.addItem(number, brand, category, title, price);
         System.out.println(addResultMessage);
     }
 
@@ -123,7 +123,7 @@ public class UserMenu {
     private void findByBrandAndTitle() {
         String brand = UserInputStatic.inputText("Введите бренд: ");
         String title = UserInputStatic.inputText("Введите бренд: ");
-        Item[] itemsByBrandsTitle = service.findByBrandAndTitle(brand,title);
+        Item[] itemsByBrandsTitle = service.findByBrandAndTitle(brand, title);
         if (itemsByBrandsTitle.length == 0) {
             System.out.println("Товары этого бренда с таким наименованием не найдены.");
         } else {

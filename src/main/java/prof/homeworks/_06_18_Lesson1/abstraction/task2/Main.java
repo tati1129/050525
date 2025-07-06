@@ -8,7 +8,7 @@ public class Main {
         Piano piano = new Piano();
         Violin violin = new Violin();
 
-        MusicalInstrument[] instruments = {guitar,piano,violin};
+        MusicalInstrument[] instruments = {guitar, piano, violin};
 
         for (int i = 0; i < instruments.length; i++) {
             instruments[i].playNote("do");

@@ -26,7 +26,6 @@ public class Student {
     }
 
 
-
     @Override
     public String toString() {
         return "Студент " +
@@ -35,8 +34,9 @@ public class Student {
                 ", обучается : " + status +
                 '}';
     }
+
     public void changeStatus() {
-        Scanner scanner =new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Enter status of student : ");
         status = scanner.nextLine();
         scanner.close();

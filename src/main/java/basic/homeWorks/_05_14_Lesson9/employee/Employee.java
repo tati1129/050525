@@ -10,7 +10,7 @@ public class Employee {
         this.name = name;
         this.hoursWorked = hoursWorked;
         this.hourlyRate = hourlyRate;
-        this.monthlySalary = hourlyRate *  hoursWorked;
+        this.monthlySalary = hourlyRate * hoursWorked;
     }
 
     public String getName() {

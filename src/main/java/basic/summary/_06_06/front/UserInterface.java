@@ -19,24 +19,24 @@ public class UserInterface {
         this.ticketService = ticketService;
     }
 
-    public void menu(){
+    public void menu() {
         // создаем все билеты с заполненными номерами в них
         ticketService.generateTicketsWithOutPlayers();
 
         // необходимо зарегистрировать игрока
-       int playerCounter = UserInputStatic.inputInt("Сколько игроков участвует:");
+        int playerCounter = UserInputStatic.inputInt("Сколько игроков участвует:");
 
-        for (int i = 0; i < playerCounter ; i++) {
+        for (int i = 0; i < playerCounter; i++) {
             String playerName = UserInputStatic.inputString("Введите имя игрока: ");
 
             Player savedPlayer = playerService.registerPlayer(playerName);
 
-            if (savedPlayer != null){
+            if (savedPlayer != null) {
                 System.out.println("Игрок успешно зарегистрирован");
 
                 int playerTicketQuantity = UserInputStatic.inputInt("Сколько билетов вы хотите купить:");
-                playerService.sellTicketsToPlayer(savedPlayer,playerTicketQuantity);
-            }else {
+                playerService.sellTicketsToPlayer(savedPlayer, playerTicketQuantity);
+            } else {
                 System.out.println("Игрока зарегистрировать не удалось.");
             }
 

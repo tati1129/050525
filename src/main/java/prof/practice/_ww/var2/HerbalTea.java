@@ -1,6 +1,6 @@
 package prof.practice._ww.var2;
 
-public class HerbalTea extends Tea{
+public class HerbalTea extends Tea {
 
     private String variety;
 
@@ -13,7 +13,7 @@ public class HerbalTea extends Tea{
         return variety;
     }
 
-    public void time(){
+    public void time() {
         System.out.println(" ");
     }
 

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class PhoneService {
 
-    public void changeMode(Phone phone){
+    public void changeMode(Phone phone) {
 
         Scanner sc = new Scanner(System.in);
 

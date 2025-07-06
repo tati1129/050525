@@ -7,7 +7,7 @@ public class Light {
 
     private String isOn;
 
-    public Light(String location, int brightness,String isOn) {
+    public Light(String location, int brightness, String isOn) {
         this.location = location;
         this.brightness = brightness;
         this.isOn = isOn;

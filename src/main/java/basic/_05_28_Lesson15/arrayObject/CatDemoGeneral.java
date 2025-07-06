@@ -10,7 +10,7 @@ public class CatDemoGeneral {
 
         Cat[] cats = new Cat[catsQuantity];
 
-        for (int i = 0; i <cats.length ; i++) {
+        for (int i = 0; i < cats.length; i++) {
             String catName = UserInputStatic.inputString("Введите имя кота!");
             Cat cat = new Cat(catName);
             cats[i] = cat;

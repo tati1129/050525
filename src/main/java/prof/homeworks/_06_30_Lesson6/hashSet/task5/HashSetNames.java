@@ -15,9 +15,8 @@ public class HashSetNames {
     public static void main(String[] args) {
 
 
-
-        List<String> listNames = new ArrayList<>(Arrays.asList("Ann", "Uno", "Timoty" , "Samanta" ,"Tina", "Tom", "Ann", "John","Bill", "Tina"));
-        System.out.println("Список с повторами: " +listNames);
+        List<String> listNames = new ArrayList<>(Arrays.asList("Ann", "Uno", "Timoty", "Samanta", "Tina", "Tom", "Ann", "John", "Bill", "Tina"));
+        System.out.println("Список с повторами: " + listNames);
 
         HashSet<String> names = new HashSet<>(listNames);
         System.out.println("Уникальные имена: " + names);

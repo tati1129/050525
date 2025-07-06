@@ -11,7 +11,7 @@ public class ManagerDemo {
 //        Manager manager = new Manager(managerName, managerEmail);
 
         ManagerService service = new ManagerService();
-       Manager manager = service.createManager();
+        Manager manager = service.createManager();
         System.out.println(manager);
 
     }

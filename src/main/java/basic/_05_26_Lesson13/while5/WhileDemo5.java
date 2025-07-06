@@ -6,11 +6,11 @@ public class WhileDemo5 {
     public static void main(String[] args) {
         int summ = 0;
         boolean condition = true;
-        while (condition){
+        while (condition) {
             int num = UserInputStatic.inputInt("Введите целое числа");
-            if (num>=0){
+            if (num >= 0) {
                 summ += num;
-            }else {
+            } else {
                 condition = false;
             }
 

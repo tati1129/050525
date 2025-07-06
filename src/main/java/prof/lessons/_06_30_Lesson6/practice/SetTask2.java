@@ -33,12 +33,12 @@ public class SetTask2 {
         если есть - то удалить
                 */
         Set<Integer> uniqSet1 = new HashSet<>(set1);
-        for (Integer elem : set2){
+        for (Integer elem : set2) {
             uniqSet1.remove(elem);
         }
 
         Set<Integer> uniqSet2 = new HashSet<>(set2);
-        for (Integer elem : set1){
+        for (Integer elem : set1) {
             uniqSet2.remove(elem);
         }
 
@@ -51,9 +51,9 @@ public class SetTask2 {
 //            dublSet.remove(elem);
 //        }
 //        System.out.println(dublSet);
-Set<Integer> commanSet = new HashSet<>();
-        for (Integer currentElem : set1){
-            if (set2.contains(currentElem)){
+        Set<Integer> commanSet = new HashSet<>();
+        for (Integer currentElem : set1) {
+            if (set2.contains(currentElem)) {
                 commanSet.add(currentElem);
             }
         }

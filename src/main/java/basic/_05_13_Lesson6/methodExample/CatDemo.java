@@ -6,10 +6,10 @@ public class CatDemo {
         Cat cat = new Cat();
 
         cat.name = "Tom";
-         cat.age = 5;
+        cat.age = 5;
 
-         cat.catMeow();
-         cat.catBirthday();
+        cat.catMeow();
+        cat.catBirthday();
     }
 
 

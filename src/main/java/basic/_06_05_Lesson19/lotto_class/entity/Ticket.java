@@ -5,8 +5,8 @@ import basic._06_05_Lesson19.lotto_class.service.NumberGenerator;
 
 public class Ticket {
     private static int nextTicketId = 1;
-    private  int ticketId;
-    private  int[] numbers;
+    private int ticketId;
+    private int[] numbers;
     private int playerId;
     private int lottaryDiapazon;
 
@@ -17,7 +17,7 @@ public class Ticket {
 
     }
 
-    public  void sellTicketPlayer(int playerId){
+    public void sellTicketPlayer(int playerId) {
         this.playerId = playerId;
     }
 
@@ -36,10 +36,10 @@ public class Ticket {
     // необходимо создать метод для заполнения массива чисел этого билета
     // либо каким-то образом в него передать эти данные
 
-    public void  generateTicketNumbers(){
-       int[] generated = NumberGenerator.generateRandomUniqueNumbers(lottaryDiapazon,numbers.length);
-            for (int i = 0; i < numbers.length; i++) {
-                numbers[i] = generated[i];
+    public void generateTicketNumbers() {
+        int[] generated = NumberGenerator.generateRandomUniqueNumbers(lottaryDiapazon, numbers.length);
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = generated[i];
         }
     }
 }

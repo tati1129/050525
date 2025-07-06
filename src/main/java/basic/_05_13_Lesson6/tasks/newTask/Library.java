@@ -20,12 +20,13 @@ public class Library {
         this.bookTitle = bookTitle;
     }
 
-    public void createInfo(int numberKatalog, int pages, boolean isInLibrary){
+    public void createInfo(int numberKatalog, int pages, boolean isInLibrary) {
         this.numberKatalog = numberKatalog;
         this.pages = pages;
         this.isInLibrary = isInLibrary;
     }
-    public void handoutBook(){
+
+    public void handoutBook() {
         if (isInLibrary) {
             isInLibrary = false;
             System.out.println("Книга выдана.");
@@ -34,7 +35,7 @@ public class Library {
         }
     }
 
-    public void returnBook(){
+    public void returnBook() {
         if (!isInLibrary) {
             isInLibrary = true;
             System.out.println("Книга возвращена в хранилище.");
@@ -42,12 +43,13 @@ public class Library {
             System.out.println("Книга уже находится в хранилище.");
         }
     }
-public void printInfo(){
-    System.out.println("Автор: " + author);
-    System.out.println("Название: " + bookTitle);
-    System.out.println("Страниц: " + pages);
-    System.out.println("Номер в каталоге: " + numberKatalog);
-    System.out.println("Статус: " + (isInLibrary ? "В хранилище" : "На руках"));
-}
+
+    public void printInfo() {
+        System.out.println("Автор: " + author);
+        System.out.println("Название: " + bookTitle);
+        System.out.println("Страниц: " + pages);
+        System.out.println("Номер в каталоге: " + numberKatalog);
+        System.out.println("Статус: " + (isInLibrary ? "В хранилище" : "На руках"));
+    }
 
 }

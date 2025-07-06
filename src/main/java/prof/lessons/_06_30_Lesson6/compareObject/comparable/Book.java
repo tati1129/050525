@@ -1,6 +1,6 @@
 package prof.lessons._06_30_Lesson6.compareObject.comparable;
 
-public class Book implements Comparable<Book>{
+public class Book implements Comparable<Book> {
     private int id;
     private String title;
 
@@ -19,9 +19,9 @@ public class Book implements Comparable<Book>{
 
     @Override
     public int compareTo(Book o) {
-        int res = id -o.getId();
-        if (res == 0){
-         res = title.compareTo(o.getTitle());
+        int res = id - o.getId();
+        if (res == 0) {
+            res = title.compareTo(o.getTitle());
         }
 
         return res;

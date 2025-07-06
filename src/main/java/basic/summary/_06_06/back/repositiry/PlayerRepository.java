@@ -5,8 +5,8 @@ import basic.summary._06_06.back.entity.Player;
 
 public class PlayerRepository {
 
-private Player[] players ;
-private int playersCounter;
+    private Player[] players;
+    private int playersCounter;
 
     public PlayerRepository() {
         this.players = new Player[LotteryConfiguration.MAX_PLAYERS];
@@ -17,21 +17,21 @@ private int playersCounter;
         return playersCounter;
     }
 
-    public boolean save(Player player){
-    if (playersCounter < players.length){
-        players[playersCounter++] = player;
-        return true;
-    }
-    return false;
-}
-
-public Player findById(int idForSearch){
-    for (int i = 0; i < playersCounter; i++) {
-        if (players[i].getId() == idForSearch){
-            return players[i];
+    public boolean save(Player player) {
+        if (playersCounter < players.length) {
+            players[playersCounter++] = player;
+            return true;
         }
+        return false;
     }
-    return  null;
-}
+
+    public Player findById(int idForSearch) {
+        for (int i = 0; i < playersCounter; i++) {
+            if (players[i].getId() == idForSearch) {
+                return players[i];
+            }
+        }
+        return null;
+    }
 
 }

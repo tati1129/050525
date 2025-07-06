@@ -7,7 +7,7 @@ public class Storage {
         this.quantityItems = quantityItems;
     }
 
-    public void issueGoods(int quantity){
+    public void issueGoods(int quantity) {
         quantityItems = quantityItems - quantity;
         System.out.println(quantity + "is issue from storage");
         System.out.println();
@@ -15,7 +15,7 @@ public class Storage {
 
     }
 
-    public void printStock(){
+    public void printStock() {
         System.out.println("The stock balance is " + quantityItems + " items");
     }
 }

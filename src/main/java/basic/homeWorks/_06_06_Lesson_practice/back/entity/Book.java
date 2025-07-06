@@ -2,11 +2,11 @@ package basic.homeWorks._06_06_Lesson_practice.back.entity;
 
 public class Book {
     private static int nextBookId = 1;
-private int id;
-private String title;
-private String author;
+    private int id;
+    private String title;
+    private String author;
 
-    public Book( String title, String author) {
+    public Book(String title, String author) {
         this.id = nextBookId++;
         this.title = title;
         this.author = author;
@@ -24,8 +24,8 @@ private String author;
     @Override
     public String toString() {
         return "Book { " +
-                "id : " + id +","+
-                " title : '" + title +","+ '\'' +
+                "id : " + id + "," +
+                " title : '" + title + "," + '\'' +
                 " author='" + author + '\'' +
                 " }";
     }

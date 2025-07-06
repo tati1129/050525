@@ -17,7 +17,7 @@ public class ArrExample1 {
         }
 
 
-        String[] strArr = {"word 1","word 2","word 3","word 1"};
+        String[] strArr = {"word 1", "word 2", "word 3", "word 1"};
         System.out.println(Arrays.toString(strArr));
 
         System.out.println(strArr[0].equals(strArr[1]));

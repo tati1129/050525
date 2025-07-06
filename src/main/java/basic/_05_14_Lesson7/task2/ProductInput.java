@@ -9,7 +9,7 @@ public class ProductInput {
         this.scanner = scanner;
     }
 
-    public String inputText(String message){
+    public String inputText(String message) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println(message);
@@ -18,7 +18,7 @@ public class ProductInput {
     }
 
 
-    public int inputInt(String message){
+    public int inputInt(String message) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println(message);
@@ -26,7 +26,7 @@ public class ProductInput {
         return inputInt;
     }
 
-    public double inputDouble(String message){
+    public double inputDouble(String message) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println(message);

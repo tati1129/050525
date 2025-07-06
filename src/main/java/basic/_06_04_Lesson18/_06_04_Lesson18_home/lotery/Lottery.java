@@ -25,7 +25,7 @@ public class Lottery {
     public void shuffledNumbers() {
         Random random = new Random();
 
-        for (int i = allLotteryNumbers.length-1; i > 0; i--) {
+        for (int i = allLotteryNumbers.length - 1; i > 0; i--) {
             int rand = random.nextInt(i);
             int temp = allLotteryNumbers[i];
             allLotteryNumbers[i] = allLotteryNumbers[rand];
@@ -43,7 +43,7 @@ public class Lottery {
         Arrays.sort(winnerNumbers);
     }
 
-    public  void printWinnersNumbers(){
+    public void printWinnersNumbers() {
         System.out.print("Выиграшные номера : " + Arrays.toString(winnerNumbers));
 
         System.out.println();

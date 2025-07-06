@@ -28,16 +28,16 @@ public class Car {
     @Override
     public boolean equals(Object o) {
         if (!(o instanceof Car car)) return false;
-        return   Objects.equals(producer, car.producer) && Objects.equals(model, car.model);
+        return Objects.equals(producer, car.producer) && Objects.equals(model, car.model);
     }
-
 
 
     @Override
     public int hashCode() {
-        return Objects.hash( producer, model);
+        return Objects.hash(producer, model);
 
     }
+
     @Override
     public String toString() {
         return "Car{" +

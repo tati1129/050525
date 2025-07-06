@@ -7,7 +7,7 @@ import java.util.Collections;
 public class ArrList {
     public static void main(String[] args) {
 
-        ArrayList<String> newList = new ArrayList<>(abc("Mad","Mad","Sad","Link","antony","Carrot","Water","Earth"));
+        ArrayList<String> newList = new ArrayList<>(abc("Mad", "Mad", "Sad", "Link", "antony", "Carrot", "Water", "Earth"));
         System.out.println(newList);
     }
 

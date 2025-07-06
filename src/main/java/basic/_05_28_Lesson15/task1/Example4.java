@@ -11,7 +11,7 @@ public class Example4 {
         String[] strArr = new String[myArrSize];
 
         for (int i = 0; i < strArr.length; i++) {
-           strArr[i] = UserInputStatic.inputString("Введите слово");
+            strArr[i] = UserInputStatic.inputString("Введите слово");
 
         }
 

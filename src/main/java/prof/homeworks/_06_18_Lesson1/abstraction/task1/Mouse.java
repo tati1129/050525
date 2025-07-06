@@ -1,6 +1,6 @@
 package prof.homeworks._06_18_Lesson1.abstraction.task1;
 
-public class Mouse extends InputDevice{
+public class Mouse extends InputDevice {
     private int dpi;
     private String color;
 

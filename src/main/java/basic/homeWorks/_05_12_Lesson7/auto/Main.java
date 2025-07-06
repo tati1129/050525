@@ -16,7 +16,6 @@ public class Main {
         System.out.println("mileage : " + car1.mileage);
 
 
-
         System.out.println("__________________________");
         System.out.println("Car 2 : ");
 

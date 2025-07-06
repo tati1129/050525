@@ -1,7 +1,7 @@
 package basic._06_11_Lesson21.unit;
 
 public class LetterCounterFromText {
-    public  int countLetter(String text){
+    public int countLetter(String text) {
         int count = 0;
 
         for (int i = 0; i < text.length(); i++) {
@@ -12,7 +12,7 @@ public class LetterCounterFromText {
                     currentLetter == 'u' ||
                     currentLetter == 'i' ||
                     currentLetter == 'e' ||
-                    currentLetter == 'y' ) {
+                    currentLetter == 'y') {
                 currentLetter++;
             }
         }

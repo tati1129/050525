@@ -7,7 +7,7 @@ public class TaskVar1 {
         int inputInt = UserInputStatic.inputInt("Введите число от 1 до 7");
 
 
-        switch (inputInt){
+        switch (inputInt) {
             case 1:
                 System.out.println("Понедельник");
                 break;

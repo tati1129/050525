@@ -14,7 +14,7 @@ public class PlayLottery {
 
         boolean isRandom = UserInputStatic.inputBoolean("Вы хотите купить билеты с заполненными числами? (true/false)");
 
-        player.fillTickets(winnerSize,lotterySize,isRandom);
+        player.fillTickets(winnerSize, lotterySize, isRandom);
         player.printPlayerData();
 
         Lottery lottery = new Lottery();
@@ -24,7 +24,7 @@ public class PlayLottery {
         lottery.printWinnersNumbers();
         LotteryResult result = new LotteryResult();
 
-        result.checkLotteryResult(lottery,player);
+        result.checkLotteryResult(lottery, player);
 
     }
 }

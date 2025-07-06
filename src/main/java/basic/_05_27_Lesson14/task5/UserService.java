@@ -25,7 +25,7 @@ public class UserService {
             userdata = UserInputStatic.inputString("Ведите " + fieldName);
 
             switch (fieldName) {
-                case "имя пользователя"-> checkResultInfo = checkUsername(userdata);
+                case "имя пользователя" -> checkResultInfo = checkUsername(userdata);
                 case "пароль" -> checkResultInfo = checkPassword(userdata);
                 case "email" -> checkResultInfo = checkEmail(userdata);
                 case "описание" -> checkResultInfo = checkDescription(userdata);

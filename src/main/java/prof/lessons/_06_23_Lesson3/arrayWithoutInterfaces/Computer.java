@@ -1,9 +1,9 @@
 package prof.lessons._06_23_Lesson3.arrayWithoutInterfaces;
 
-public class Computer extends Device{
+public class Computer extends Device {
 
-private int size;
-private String processor;
+    private int size;
+    private String processor;
 
     public Computer(String model, String description, int size, String processor) {
         super(model, description);

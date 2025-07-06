@@ -14,7 +14,7 @@ public class ProductApp {
         int qantity = productInput.inputInt("Enter a qantity");
         double price = productInput.inputDouble("Enter price");
 
-        Product product = new Product(title,qantity, price);
+        Product product = new Product(title, qantity, price);
 
 
         System.out.println(product);

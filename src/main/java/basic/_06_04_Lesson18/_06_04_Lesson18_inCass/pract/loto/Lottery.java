@@ -62,14 +62,15 @@ public class Lottery {
     // перемешиваем все номера
     // берем попорядку начиная с первого столько - сколько должно быть выигрышных номеров
 
-    public void lotteryRound(int quantityWinnerNum){
+    public void lotteryRound(int quantityWinnerNum) {
         winnerNumbers = new int[quantityWinnerNum];
         shuffleNumbers();
         for (int i = 0; i < winnerNumbers.length; i++) {
             winnerNumbers[i] = allLoteryNumbers[i];
         }
     }
-    public void printWinnerNumbers(){
+
+    public void printWinnerNumbers() {
         System.out.println("Выигрышные номера: " + Arrays.toString(winnerNumbers));
     }
 

@@ -37,7 +37,7 @@ public class Car {
 
     public void setFuelConsumption(double fuelConsumption) {
         this.fuelConsumption = fuelConsumption;
-        this.maxDistance = Math.round((fuelTankCapacity * 100 / fuelConsumption ) * 100.0) / 100.0;
+        this.maxDistance = Math.round((fuelTankCapacity * 100 / fuelConsumption) * 100.0) / 100.0;
     }
 
     public double getFuelTankCapacity() {
@@ -62,9 +62,9 @@ public class Car {
         return "Car{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
-                ", fuelConsumption=" + fuelConsumption+ " l/100km "+
-                ", fuelTankCapacity=" + fuelTankCapacity +" l "+
-                ", maxDistance=" + maxDistance + " km "+
+                ", fuelConsumption=" + fuelConsumption + " l/100km " +
+                ", fuelTankCapacity=" + fuelTankCapacity + " l " +
+                ", maxDistance=" + maxDistance + " km " +
                 '}';
     }
 }

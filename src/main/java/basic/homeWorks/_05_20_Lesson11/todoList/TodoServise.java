@@ -30,12 +30,12 @@ public class TodoServise {
         return newTask;
     }
 
-    public void createTaskForDay(){
+    public void createTaskForDay() {
         Day day = createDay();
         if (day != null) {
             DayOfWeek dayOfWeek = new DayOfWeek(day.name()); // Создаем DayOfWeek из Day
             String anotherTask = "y";
-            while (anotherTask.equalsIgnoreCase("y")){
+            while (anotherTask.equalsIgnoreCase("y")) {
                 createTask(dayOfWeek);
                 UserInput input = new UserInput();
                 anotherTask = input.inputText("Хотите добавить еще задачу для этого дня? (y/n): ");

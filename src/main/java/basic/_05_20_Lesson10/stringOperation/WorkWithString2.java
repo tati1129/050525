@@ -27,7 +27,7 @@ public class WorkWithString2 {
 
         String substrFomText1 = text.substring(29);
 
-        String substrFomText2 = text.substring(0,15);
+        String substrFomText2 = text.substring(0, 15);
 
         System.out.println(substrFomText1);
         System.out.println(substrFomText2);

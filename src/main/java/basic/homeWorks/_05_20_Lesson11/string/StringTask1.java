@@ -17,7 +17,7 @@ public class StringTask1 {
         System.out.println("Is contains : " + str1.contains("Java"));
 
         //5 Заменить все символы “а” на “о”.
-        System.out.println("Replace 'a' to 'o' : "+str1.replace('a', 'o'));
+        System.out.println("Replace 'a' to 'o' : " + str1.replace('a', 'o'));
 
         //6 Преобразуйте строку к верхнему регистру.
         System.out.println(str1.toLowerCase());
@@ -30,9 +30,10 @@ public class StringTask1 {
 
 
     }
+
     //2 Напишите метод, который принимает в качестве параметра строку,
     // передайте в этот метод строку, которую создали в п.1
-    public static  void printStr(String string){
+    public static void printStr(String string) {
         System.out.println("Вот созданная строка : " + string);
     }
 }

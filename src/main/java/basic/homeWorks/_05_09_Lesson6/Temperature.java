@@ -9,8 +9,8 @@ public class Temperature {
     int saturday = 16;
     int sunday = 18;
 
-    public void avgTemperature(){
-      int result =  (monday + tuesday +wednesday + thursday + friday + saturday + sunday)/7;
+    public void avgTemperature() {
+        int result = (monday + tuesday + wednesday + thursday + friday + saturday + sunday) / 7;
         System.out.println("Average temperature for a week is : " + result);
     }
 }

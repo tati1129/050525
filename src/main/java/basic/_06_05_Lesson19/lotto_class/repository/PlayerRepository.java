@@ -9,7 +9,7 @@ public class PlayerRepository {
 
 
     public PlayerRepository() {
-        this.players =new Player[LotteryConfiguration.MAX_PLAYERS];
+        this.players = new Player[LotteryConfiguration.MAX_PLAYERS];
         this.playersCounter = 0;
     }
 
@@ -17,8 +17,8 @@ public class PlayerRepository {
         return playersCounter;
     }
 
-    public boolean  save(Player player){
-        if (playersCounter < players.length){
+    public boolean save(Player player) {
+        if (playersCounter < players.length) {
             players[playersCounter++] = player;
             return true;
         }
@@ -26,9 +26,9 @@ public class PlayerRepository {
     }
 
 
-    public Player findById(int idForSearch){
+    public Player findById(int idForSearch) {
         for (int i = 0; i < playersCounter; i++) {
-            if (players[i].getId() == idForSearch){
+            if (players[i].getId() == idForSearch) {
                 return players[i];
             }
         }

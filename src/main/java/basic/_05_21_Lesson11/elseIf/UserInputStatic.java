@@ -18,14 +18,14 @@ public class UserInputStatic {
         return inputInt;
     }
 
-    public static double inputDouble(String message){
+    public static double inputDouble(String message) {
         System.out.println(message);
         double inputDouble = sc.nextDouble();
         sc.nextLine();
         return inputDouble;
     }
 
-    public static void close(){
+    public static void close() {
         sc.close();
     }
 }

@@ -6,11 +6,11 @@ public class BookDemo {
     public static void main(String[] args) {
 
         List<Book> books = new ArrayList<>();
-        books.add(new Book("Atlas Shrugged", "Rand Ayn",1990));
-        books.add(new Book("Shantaram", "Roberts Gregory",2010));
-        books.add(new Book("Idiot", "Dostoyevskiy Fedor",1970));
-        books.add(new Book("Broters Karamazovy", "Dostoyevskiy Fedor",1980));
-        books.add(new Book("The Fountainhead", "Rand Ayn",1990));
+        books.add(new Book("Atlas Shrugged", "Rand Ayn", 1990));
+        books.add(new Book("Shantaram", "Roberts Gregory", 2010));
+        books.add(new Book("Idiot", "Dostoyevskiy Fedor", 1970));
+        books.add(new Book("Broters Karamazovy", "Dostoyevskiy Fedor", 1980));
+        books.add(new Book("The Fountainhead", "Rand Ayn", 1990));
 
 
         // Сортировка по названию

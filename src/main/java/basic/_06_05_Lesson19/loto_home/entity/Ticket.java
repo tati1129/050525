@@ -6,8 +6,8 @@ import basic._06_05_Lesson19.loto_home.service.NumberGenerator;
 
 public class Ticket {
     private static int nextTicketId;
-    private  int ticketId; //идентификатор 1билета у пользователя
-    private  int[] numbers; //номера в билете
+    private int ticketId; //идентификатор 1билета у пользователя
+    private int[] numbers; //номера в билете
     private int playerId; //идентификатор пользователя
     private int lotteryDiapazon; //
 
@@ -18,7 +18,7 @@ public class Ticket {
         generateTicketNumbers();
     }
 
-    public void sellTicketPlayer(int playerId){
+    public void sellTicketPlayer(int playerId) {
         this.playerId = playerId;
     }
 
@@ -34,8 +34,8 @@ public class Ticket {
         return numbers.clone();
     }
 
-    private void  generateTicketNumbers(){
-       int[] generared =  NumberGenerator.generateRandomUniqueNumbers(lotteryDiapazon, numbers.length);
+    private void generateTicketNumbers() {
+        int[] generared = NumberGenerator.generateRandomUniqueNumbers(lotteryDiapazon, numbers.length);
         for (int i = 0; i < numbers.length; i++) {
             numbers[i] = generared[i];
         }

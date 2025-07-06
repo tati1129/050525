@@ -21,6 +21,7 @@ abstract public class Vechicle {
         this.speed = speed;
     }
 
-    abstract  void accelerate();
-    abstract  void brake();
+    abstract void accelerate();
+
+    abstract void brake();
 }

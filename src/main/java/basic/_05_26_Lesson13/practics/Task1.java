@@ -9,11 +9,11 @@ public class Task1 {
 
     public static void main(String[] args) {
         boolean condition = true;
-        while (condition){
-            int  num = UserInputStatic.inputInt("Введите целое положительное числа");
-            if ( num>0 && num %2 == 0){
+        while (condition) {
+            int num = UserInputStatic.inputInt("Введите целое положительное числа");
+            if (num > 0 && num % 2 == 0) {
                 System.out.println(num);
-            }else {
+            } else {
                 System.out.println("Число отрицательное и нечетное : " + num);
                 condition = false;
             }

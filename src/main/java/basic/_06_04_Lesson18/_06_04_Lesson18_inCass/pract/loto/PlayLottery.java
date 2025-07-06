@@ -29,7 +29,7 @@ public class PlayLottery {
         // в игроке мы создаем билеты (а в каждом билете заполняем данные о его номерах)
         boolean isRandom = UserInputStatic.inputBoolean("Вы хотите купить билеты с готовыми числами? (true / false)");
 
-        player.fillTickets(winnerSize,lotterySize,isRandom);
+        player.fillTickets(winnerSize, lotterySize, isRandom);
 
         player.printPlayerData();
 

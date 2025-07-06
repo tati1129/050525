@@ -14,13 +14,13 @@ public class Main1 {
         boolean isSimple = true;
 
         for (int i = 2; i < userNum; i++) {
-            if (userNum % i == 0){
+            if (userNum % i == 0) {
                 isSimple = false;
                 break;
             }
-            if (isSimple){
+            if (isSimple) {
                 System.out.println("Число " + userNum + " является простым");
-            }else {
+            } else {
                 System.out.println("Число " + userNum + " не является простым");
             }
 

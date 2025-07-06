@@ -19,6 +19,7 @@ abstract public class InputDevice {
     }
 
     public abstract void connect();
+
     public abstract void disconnect();
 
     @Override

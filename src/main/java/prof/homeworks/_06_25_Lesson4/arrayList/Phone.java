@@ -36,7 +36,7 @@ public class Phone {
     public String toString() {
         return "Phone { " +
                 title + " : " +
-                + price +
+                +price +
                 " } ";
     }
 }

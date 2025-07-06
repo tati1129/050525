@@ -12,7 +12,7 @@ public class Task2 {
     public static void main(String[] args) {
         Random random = new Random();
         int[] array = new int[5];
-        int[] array1 = {1,2,3,4,5,6,8};
+        int[] array1 = {1, 2, 3, 4, 5, 6, 8};
 
         for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(90) + 10;
@@ -22,9 +22,10 @@ public class Task2 {
         System.out.println(isGrowing(array));
         System.out.println(isGrowing(array1));
     }
-    public static boolean isGrowing(int[] arr){
-        for (int i = 0; i < arr.length-1; i++) {
-            if (!(arr[i] < arr[i+1])){
+
+    public static boolean isGrowing(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (!(arr[i] < arr[i + 1])) {
                 return false;
             }
         }

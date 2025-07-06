@@ -1,8 +1,8 @@
 package prof.homeworks._06_18_Lesson1.abstraction.task3;
 
-public class CarNavigationSystem extends NavigationSystem{
+public class CarNavigationSystem extends NavigationSystem {
 
-private String name;
+    private String name;
 
     public CarNavigationSystem(String enviroment, String name) {
         super(enviroment);

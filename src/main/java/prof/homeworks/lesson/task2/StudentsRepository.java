@@ -11,19 +11,19 @@ public class StudentsRepository {
 
     }
 
-    public Student createStudentFromUser(){
+    public Student createStudentFromUser() {
         String firstName = UserInputStatic.inputText("Введите имя студента");
         String lastName = UserInputStatic.inputText("Введите фамилию студента");
         int age = UserInputStatic.inputInt("Введите возраст студента");
 
-        return new Student(firstName,lastName,age);
+        return new Student(firstName, lastName, age);
 
     }
 
-    public Student[] addStudent(){
+    public Student[] addStudent() {
         int quantity = UserInputStatic.inputInt("Сколько студентов вы хотите добавить");
-Student[] result = new Student[quantity];
-        if (quantity<capacity){
+        Student[] result = new Student[quantity];
+        if (quantity < capacity) {
             for (int i = 0; i < quantity; i++) {
                 result[i] = createStudentFromUser();
             }

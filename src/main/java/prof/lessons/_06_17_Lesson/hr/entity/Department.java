@@ -1,8 +1,8 @@
 package prof.lessons._06_17_Lesson.hr.entity;
 
 public class Department {
-    private  String departmentName;
-    private  int quantityEmployee;
+    private String departmentName;
+    private int quantityEmployee;
 
     public Department(String departmentName, int quantityEmployee) {
         this.departmentName = departmentName;

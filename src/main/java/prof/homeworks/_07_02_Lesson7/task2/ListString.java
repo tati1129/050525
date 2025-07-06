@@ -1,4 +1,4 @@
-package prof.homeworks._07_03_Lesson7.task2;
+package prof.homeworks._07_02_Lesson7.task2;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,7 +13,7 @@ public class ListString {
         Character chOld = 'a';
         Character chNew = '…';
         System.out.println("До замены: " + list);
-      replaseElement(list, chOld, chNew);
+        replaseElement(list, chOld, chNew);
 
         System.out.println("После замены: " + list);
     }
@@ -22,7 +22,7 @@ public class ListString {
         ListIterator<String> listIterator = strings.listIterator();
         while (listIterator.hasNext()) {
             String current = listIterator.next();
-            String replaced = current.replace(charOld,charNew);
+            String replaced = current.replace(charOld, charNew);
 
             listIterator.set(replaced);
         }

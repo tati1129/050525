@@ -1,6 +1,6 @@
 package prof.practice._ww.var2;
 
-public class GreenTea extends  Tea{
+public class GreenTea extends Tea {
     private String variety;
 
     public GreenTea(int id, String manufacturer, String variety) {
@@ -12,7 +12,7 @@ public class GreenTea extends  Tea{
         return variety;
     }
 
-    public void temperature(){
+    public void temperature() {
         System.out.println(" ");
     }
 }

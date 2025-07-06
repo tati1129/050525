@@ -46,10 +46,6 @@ public class ManufacturerRepository {
     }
 
 
-
-
-
-
     public String saveManufacturer(Manufacture manufacture) {
         if (counterManufacturer < manufactures.length) {
             manufactures[counterManufacturer++] = manufacture;

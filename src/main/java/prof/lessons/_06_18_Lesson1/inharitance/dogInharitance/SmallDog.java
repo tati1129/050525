@@ -1,6 +1,6 @@
 package prof.lessons._06_18_Lesson1.inharitance.dogInharitance;
 
-public class SmallDog extends Dog{
+public class SmallDog extends Dog {
 
 
     private boolean visitGroomer;
@@ -14,7 +14,10 @@ public class SmallDog extends Dog{
         return visitGroomer;
     }
 
-    public  void visitGroomer(){};
+    public void visitGroomer() {
+    }
+
+    ;
 
 
     @Override

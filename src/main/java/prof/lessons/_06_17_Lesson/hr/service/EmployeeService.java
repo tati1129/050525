@@ -15,7 +15,7 @@ public class EmployeeService {
         this.aplicantService = aplicantService;
     }
 
-    public void addNewEmployee(){
+    public void addNewEmployee() {
         // Получает ID соискателя с клавиатуры.
         int aplicantId = UserInputStatic.inputInt("Введите id соискателя для оформления в компанию:");
 
@@ -34,7 +34,7 @@ public class EmployeeService {
         int newEmployeeSalary = UserInputStatic.inputInt("Введите зарплату новго сотрудника:");
 
         // Создаёт объект Employee
-        Employee employee = new Employee( newEmployeeId,person,department,newEmployeePosition,newEmployeeSalary);
+        Employee employee = new Employee(newEmployeeId, person, department, newEmployeePosition, newEmployeeSalary);
 
         // Сохраняет сотрудника через repository.save(...).
         String savedMessage = repository.save(employee);
@@ -43,9 +43,9 @@ public class EmployeeService {
         System.out.println(savedMessage);
     }
 
-    public  void printAll(){
+    public void printAll() {
         Employee[] all = repository.findAll();
-        for (Employee employee: all){
+        for (Employee employee : all) {
             System.out.println(employee);
         }
     }

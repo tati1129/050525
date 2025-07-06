@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class CopyArrExample2 {
     public static void main(String[] args) {
 
-        Cat[] array= {new Cat("Amm"),new Cat("Sss"), new Cat("Rrff")};
-        Cat[] newArray=array.clone();
+        Cat[] array = {new Cat("Amm"), new Cat("Sss"), new Cat("Rrff")};
+        Cat[] newArray = array.clone();
 
 
         System.out.println(Arrays.toString(array));

@@ -13,11 +13,9 @@ public class StringBufferExample {
         sb.append(" Ильф и Петров");
         sb.append(true);
 
-        sb.append(Arrays.asList(1,2,3));
+        sb.append(Arrays.asList(1, 2, 3));
 
         System.out.println(sb);
-
-
 
 
     }

@@ -17,7 +17,7 @@ public class Employee {
         return age;
     }
 
-    public void printInfo(){
+    public void printInfo() {
         System.out.println("Employee : " + name + " age " + age);
     }
 }

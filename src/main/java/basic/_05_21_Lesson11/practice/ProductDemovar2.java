@@ -12,7 +12,7 @@ public class ProductDemovar2 {
         String newProductName = UserInputStatic.inputText("Введите название продукта : ");
         int newProductPrice = UserInputStatic.inputInt("Введите цену продукта : ");
 
-        boolean checkProductName = !newProductName.isBlank() && newProductName.length()>=5 && newProductName.length()<15;
+        boolean checkProductName = !newProductName.isBlank() && newProductName.length() >= 5 && newProductName.length() < 15;
 
         boolean checkProductPrice = newProductPrice > 0;
 

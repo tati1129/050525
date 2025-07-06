@@ -1,6 +1,6 @@
 package prof.homeworks._06_19_Lesson2.task2;
 
-public class Rectangle implements Shape{
+public class Rectangle implements Shape {
     private double width;
     private double height;
 
@@ -11,7 +11,7 @@ public class Rectangle implements Shape{
 
     @Override
     public double getArea() {
-        return width*height;
+        return width * height;
     }
 
 

@@ -8,19 +8,19 @@ public class ProductService {
     List<Category> categories = new ArrayList<>();
     Category fruitsLocal = new Category("fruitsLocal");
     Category fruitsImport = new Category("fruitsImport");
-    Category vegetables =  new Category("vegetables");
+    Category vegetables = new Category("vegetables");
 
-    Product product1 = new Product("apple", fruitsLocal,25.3,40);
-    Product product2 = new Product("peach",fruitsLocal, 27.2,20);
-    Product product3 = new Product("plum", fruitsLocal,20.6,50);
-    Product product4 = new Product("banana",fruitsImport, 13.3,100);
-    Product product5 = new Product("ananas",fruitsImport, 40.2,30);
-    Product product6 = new Product("orange", fruitsImport,14.7,75);
-    Product product7 = new Product("tomato",vegetables, 9.9,68);
-    Product product8 = new Product("cucumber", vegetables,8.2,49);
-    Product product9 = new Product("zuccini", vegetables,7.8,37);
+    Product product1 = new Product("apple", fruitsLocal, 25.3, 40);
+    Product product2 = new Product("peach", fruitsLocal, 27.2, 20);
+    Product product3 = new Product("plum", fruitsLocal, 20.6, 50);
+    Product product4 = new Product("banana", fruitsImport, 13.3, 100);
+    Product product5 = new Product("ananas", fruitsImport, 40.2, 30);
+    Product product6 = new Product("orange", fruitsImport, 14.7, 75);
+    Product product7 = new Product("tomato", vegetables, 9.9, 68);
+    Product product8 = new Product("cucumber", vegetables, 8.2, 49);
+    Product product9 = new Product("zuccini", vegetables, 7.8, 37);
 
-    public ProductService(){
+    public ProductService() {
         categories.add(fruitsLocal);
         categories.add(fruitsImport);
         categories.add(vegetables);

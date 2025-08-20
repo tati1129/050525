@@ -42,7 +42,7 @@ public class Category {
                 .mapToDouble(p -> p.getPrice())
                 .average()
                 .orElse(0);
-        this.priceAvg = Math.round(this.priceAvg *100.0) / 100.0;
+        this.priceAvg = Math.round(this.priceAvg * 100.0) / 100.0;
     }
 
     @Override

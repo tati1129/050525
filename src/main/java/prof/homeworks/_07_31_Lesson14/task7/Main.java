@@ -11,19 +11,19 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         ProductService service = new ProductService();
-List<Category> categories = fiteredByAVGPriceAndSortedDescByPrice(service.categories, 40);
+        List<Category> categories = fiteredByAVGPriceAndSortedDescByPrice(service.categories, 40);
         System.out.println("Category of products filtered by priceAVG and quantity and sorted ba price desc");
-        for (Category c : categories){
+        for (Category c : categories) {
             System.out.println(c);
         }
 
     }
 
-    public static List<Category> fiteredByAVGPriceAndSortedDescByPrice(List<Category> categories,int quantity){
-       return categories.stream()
+    public static List<Category> fiteredByAVGPriceAndSortedDescByPrice(List<Category> categories, int quantity) {
+        return categories.stream()
                 .filter(c -> c.getProducts().stream()
                         .mapToInt(p -> p.getQuantity()).sum() > quantity)
                 .sorted(Comparator.comparingDouble(Category::getPriceAvg).reversed())
-               .toList();
+                .toList();
     }
 }

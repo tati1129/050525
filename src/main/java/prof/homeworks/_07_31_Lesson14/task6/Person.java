@@ -24,7 +24,7 @@ public class Person {
         this.skills = skills;
     }
 
-    public void addSkill(String skill){
+    public void addSkill(String skill) {
         skills.add(skill);
     }
 

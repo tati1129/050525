@@ -16,7 +16,7 @@ public class PersonService {
     Person person8 = new Person("Ann", 27);
     Person person9 = new Person("Peter", 39);
 
-    public PersonService(){
+    public PersonService() {
         person1.addSkill("Java");
         person1.addSkill("SQL");
 

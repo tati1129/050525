@@ -1,8 +1,5 @@
 package prof.homeworks._07_31_Lesson14.task7;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Product {
     private static int counter = 0;
     private int id;

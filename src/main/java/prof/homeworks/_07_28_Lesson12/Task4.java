@@ -1,4 +1,4 @@
-package prof.homeworks._08_28_Lesson12;
+package prof.homeworks._07_28_Lesson12;
 /*Напишите функциональный интерфейс для вычисления факториала числа.
 
  */

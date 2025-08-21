@@ -1,6 +1,5 @@
-package prof.homeworks._08_28_Lesson12;
+package prof.homeworks._07_28_Lesson12;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

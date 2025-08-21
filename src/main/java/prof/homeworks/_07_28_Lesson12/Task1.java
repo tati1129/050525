@@ -1,7 +1,5 @@
-package prof.homeworks._08_28_Lesson12;
+package prof.homeworks._07_28_Lesson12;
 
-import java.util.function.Consumer;
-import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
 /*

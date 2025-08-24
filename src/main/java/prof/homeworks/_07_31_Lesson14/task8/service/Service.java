@@ -14,12 +14,12 @@ public class Service {
         this.repository = new PersonsRepository();
         repository.loadFromFile(path);
     }
-    public List<Person> finfAll(){
+    public List<Person> findAll(){
        return repository.findAll();
     }
 
     public List<Person> getByGenderAndAge(String gender, int agefrom, int ageTo){
-       return finfAll().stream()
+       return findAll().stream()
                 .filter(p -> p.getGender().equalsIgnoreCase(gender))
                 .filter(p -> p.getAge() >= agefrom && p.getAge() < ageTo)
                 .collect(Collectors.toList()
@@ -27,7 +27,7 @@ public class Service {
     }
 
     public double  getSalaryAVGByGenderAndAge(String gender, int agefrom, int ageTo) {
-        return finfAll().stream()
+        return findAll().stream()
                 .filter(p -> p.getGender().equalsIgnoreCase(gender))
                 .filter(p -> p.getAge() >= agefrom && p.getAge() < ageTo)
                 .mapToDouble(p -> p.getSalary())

@@ -15,7 +15,7 @@ public class Main {
         PersonsRepository repository = new PersonsRepository();
         Service service = new Service();
         System.out.println("Всего людей в списке: " + repository.findAll().size());
-//        List<Person> people = service.finfAll();
+//        List<Person> people = service.findAll();
         List<Person> people = service.getByGenderAndAge("male", 25,40);
 
         for (Person p:people){
